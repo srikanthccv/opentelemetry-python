@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608693400568,
+  "lastUpdate": 1608693428011,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -656,6 +656,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000063493498273601575",
             "extra": "mean: 5.4921412957609625 usec\nrounds: 120453"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "enowell@amazon.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "8ebd6c80c0475e1d203671a5a3807961e0eb44cf",
+          "message": "Add throughput performance tests for OTLP exporter (#1491)",
+          "timestamp": "2020-12-22T17:06:41-08:00",
+          "tree_id": "7b1127d9443b4809f6a7a1f745a4d50840ffcaf0",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/8ebd6c80c0475e1d203671a5a3807961e0eb44cf"
+        },
+        "date": 1608693426874,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 200759.41985412835,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000015737735395579358",
+            "extra": "mean: 4.981086320764422 usec\nrounds: 131579"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 151791.50118089368,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000019046515180265883",
+            "extra": "mean: 6.58798412440941 usec\nrounds: 192308"
           }
         ]
       }
