@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609781970038,
+  "lastUpdate": 1609781980660,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -114,6 +114,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00005843309149313679",
             "extra": "mean: 71.17379388568051 usec\nrounds: 7098"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bd8db6e2a461d896c1c0556efd0f4b569106fa96",
+          "message": "Add protobuf via gRPC exporting support for Jaeger (#1471)",
+          "timestamp": "2021-01-04T09:13:16-08:00",
+          "tree_id": "ab66aeae2640c477e711409223dda795b083ee77",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/bd8db6e2a461d896c1c0556efd0f4b569106fa96"
+        },
+        "date": 1609781979632,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 18220.875694531296,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000016965075819243446",
+            "extra": "mean: 54.88210428328282 usec\nrounds: 4459"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13711.928148908075,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000022668047001165872",
+            "extra": "mean: 72.92920362039916 usec\nrounds: 8231"
           }
         ]
       }
