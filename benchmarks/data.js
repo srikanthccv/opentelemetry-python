@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610426658550,
+  "lastUpdate": 1610426664312,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -1570,6 +1570,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008779395366196348",
             "extra": "mean: 317.27798290383686 usec\nrounds: 3919"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "09ac955f5301fbb3d4fc521bdf86c0a76b4a3387",
+          "message": "Move idsgenerator from api into sdk package (#1514)",
+          "timestamp": "2021-01-11T12:39:23-08:00",
+          "tree_id": "23ec81a5ee30e905bb2fae19dcbaf05fc04b00c3",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/09ac955f5301fbb3d4fc521bdf86c0a76b4a3387"
+        },
+        "date": 1610426655275,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2810.423400496039,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004208726543048127",
+            "extra": "mean: 355.8182727284082 usec\nrounds: 110"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3635.493617562236,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008722877657565672",
+            "extra": "mean: 275.0658109174581 usec\nrounds: 5056"
           }
         ]
       }
