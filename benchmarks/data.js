@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610469847952,
+  "lastUpdate": 1610469888843,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -1796,6 +1796,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00008025419776457966",
             "extra": "mean: 7.261237607191602 usec\nrounds: 178572"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b326793803118b49f094e7e830ab3ff36db495f8",
+          "message": "Remove ThreadLocalRuntimeContext since py34 is no longer supported (#1512)",
+          "timestamp": "2021-01-12T08:17:01-08:00",
+          "tree_id": "d70595807dd14187842e0d69466769eaa9e252b4",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/b326793803118b49f094e7e830ab3ff36db495f8"
+        },
+        "date": 1610469886120,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 194901.27555673404,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012609511645201486",
+            "extra": "mean: 5.13080274689587 usec\nrounds: 151516"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 90334.63296562819,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000025238184058629555",
+            "extra": "mean: 11.069951436903432 usec\nrounds: 178572"
           }
         ]
       }
