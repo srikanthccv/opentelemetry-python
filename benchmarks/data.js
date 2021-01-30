@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611980756613,
+  "lastUpdate": 1611980763166,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -762,6 +762,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00005357995367432824",
             "extra": "mean: 65.42072686539113 usec\nrounds: 7813"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mario.jonke@dynatrace.com",
+            "name": "Mario Jonke",
+            "username": "mariojonke"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "05ab4a70e17958d3d75c6c35253216d5afb42085",
+          "message": "Cleanup references to semantic convetion 'component' attribute (#1555)",
+          "timestamp": "2021-01-29T15:21:08-08:00",
+          "tree_id": "58e5b54994bd19d5541e1430b0b51e7eb25ce2f3",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/05ab4a70e17958d3d75c6c35253216d5afb42085"
+        },
+        "date": 1611980758577,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 22286.441704622546,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000014102642249362925",
+            "extra": "mean: 44.8703302776497 usec\nrounds: 4036"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15081.753943803036,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000015072111912718922",
+            "extra": "mean: 66.30528542808455 usec\nrounds: 7988"
           }
         ]
       }
