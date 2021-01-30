@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611980840714,
+  "lastUpdate": 1611980844889,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -1182,6 +1182,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00005807688894529392",
             "extra": "mean: 96.39589666510153 usec\nrounds: 6658"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mario.jonke@dynatrace.com",
+            "name": "Mario Jonke",
+            "username": "mariojonke"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "05ab4a70e17958d3d75c6c35253216d5afb42085",
+          "message": "Cleanup references to semantic convetion 'component' attribute (#1555)",
+          "timestamp": "2021-01-29T15:21:08-08:00",
+          "tree_id": "58e5b54994bd19d5541e1430b0b51e7eb25ce2f3",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/05ab4a70e17958d3d75c6c35253216d5afb42085"
+        },
+        "date": 1611980838320,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 19619.11467108333,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005075920806966422",
+            "extra": "mean: 50.9706995838045 usec\nrounds: 1681"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13090.326494382036,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000230927650231602",
+            "extra": "mean: 76.3922886437683 usec\nrounds: 4975"
           }
         ]
       }
