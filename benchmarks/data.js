@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612452726920,
+  "lastUpdate": 1612452734996,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -4200,6 +4200,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0012994220602679395",
             "extra": "mean: 278.194456079696 usec\nrounds: 5510"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "30bb6a7b3e87e25c428f5582db96c4509d293523",
+          "message": "Set actions cache back to V2 (#1565)\n\nFixes #1564",
+          "timestamp": "2021-02-02T09:07:09-08:00",
+          "tree_id": "962a18a8accab09af0c982e3335b15a0e9eddc43",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/30bb6a7b3e87e25c428f5582db96c4509d293523"
+        },
+        "date": 1612452733970,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1042.0944687010838,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000010980904923182386",
+            "extra": "mean: 959.6058994981978 usec\nrounds: 199"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4148.1791547594485,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0013249928047788164",
+            "extra": "mean: 241.06962662223535 usec\nrounds: 6318"
           }
         ]
       }
