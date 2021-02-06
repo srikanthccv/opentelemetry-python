@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612586110202,
+  "lastUpdate": 1612586135718,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -4236,6 +4236,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008355507534971808",
             "extra": "mean: 224.73466483643207 usec\nrounds: 5102"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "59fc285333041f3dc45a1c82563f531711bf63a5",
+          "message": "Update README.md (#1574)",
+          "timestamp": "2021-02-05T09:08:16-08:00",
+          "tree_id": "51cb976f4b4d174229b9917246ebbaec796c5810",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/59fc285333041f3dc45a1c82563f531711bf63a5"
+        },
+        "date": 1612586134723,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2850.4816354939285,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000010135409044454623",
+            "extra": "mean: 350.81790654186096 usec\nrounds: 214"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3792.6428552907455,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009630089886422442",
+            "extra": "mean: 263.66838063990065 usec\nrounds: 4876"
           }
         ]
       }
