@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614408916386,
+  "lastUpdate": 1614408919609,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -5184,6 +5184,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000837946091287269",
             "extra": "mean: 268.57118437408343 usec\nrounds: 5516"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "290478e3312debd023f179fe403ede025fbbefc7",
+          "message": "Rename IdsGenerator to IdGenerator (#1651)",
+          "timestamp": "2021-02-26T14:56:23-08:00",
+          "tree_id": "ca5968f581d439ec07d73dc2e9affee198585e3b",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/290478e3312debd023f179fe403ede025fbbefc7"
+        },
+        "date": 1614408917876,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1867.0979632833137,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0001019208841937662",
+            "extra": "mean: 535.5905365787494 usec\nrounds: 82"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2712.9316654859867,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009283615020580562",
+            "extra": "mean: 368.6049349204167 usec\nrounds: 4072"
           }
         ]
       }
