@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614828682701,
+  "lastUpdate": 1614828698006,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -2514,6 +2514,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00000571495652094161",
             "extra": "mean: 48.20886019938554 usec\nrounds: 8555"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "9bf28fb451a85fd9e9a4f2276c3eebd484e55d02",
+          "message": "rename BaggagePropagator to W3CBaggagePropagator (#1663)\n\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2021-03-02T17:05:32-08:00",
+          "tree_id": "3c56d146c21a8f8814fba92f760ae3ecbb0e0915",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/9bf28fb451a85fd9e9a4f2276c3eebd484e55d02"
+        },
+        "date": 1614828696818,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 27372.518250281457,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009403874351595437",
+            "extra": "mean: 36.53299235592682 usec\nrounds: 5102"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 19098.724256844343,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000019543336233059877",
+            "extra": "mean: 52.35951818308668 usec\nrounds: 8937"
           }
         ]
       }
