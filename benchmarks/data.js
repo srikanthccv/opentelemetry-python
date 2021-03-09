@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615267567032,
+  "lastUpdate": 1615267569059,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -4914,6 +4914,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000965336189080421",
             "extra": "mean: 382.4209848727025 usec\nrounds: 4363"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6087aea507e5acd974e965e2b16884df02612e57",
+          "message": "expose StatusCode from opentelemetry.trace (#1681)",
+          "timestamp": "2021-03-08T14:15:58-08:00",
+          "tree_id": "8cdba8ede37736f73416e5d39b034c9586cfca34",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/6087aea507e5acd974e965e2b16884df02612e57"
+        },
+        "date": 1615267567750,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1741.645598197056,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00006083082871978676",
+            "extra": "mean: 574.1696250001698 usec\nrounds: 72"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2440.9252639237384,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0010363848616751301",
+            "extra": "mean: 409.6807119741635 usec\nrounds: 4017"
           }
         ]
       }
