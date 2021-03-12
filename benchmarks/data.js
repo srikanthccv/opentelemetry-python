@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615519916892,
+  "lastUpdate": 1615519919817,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -2246,6 +2246,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000776342088284173",
             "extra": "mean: 69.89255067751525 usec\nrounds: 5239"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a46b4c2039275b4c480b3ef3a3ca530fd443c0a2",
+          "message": "Update docs to specify to use Resource APIs to work with Resource (#1686)",
+          "timestamp": "2021-03-11T18:55:08-08:00",
+          "tree_id": "7ae56ab818db51d52dbcaf0b79c773239f4b8595",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/a46b4c2039275b4c480b3ef3a3ca530fd443c0a2"
+        },
+        "date": 1615519918652,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 17281.22855477021,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000021188442309364134",
+            "extra": "mean: 57.86625625780326 usec\nrounds: 1518"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 10859.550622694074,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003828379445703006",
+            "extra": "mean: 92.08484169779732 usec\nrounds: 6974"
           }
         ]
       }
