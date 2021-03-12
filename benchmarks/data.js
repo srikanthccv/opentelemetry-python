@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615519858337,
+  "lastUpdate": 1615519874888,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -5180,6 +5180,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0010363848616751301",
             "extra": "mean: 409.6807119741635 usec\nrounds: 4017"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a46b4c2039275b4c480b3ef3a3ca530fd443c0a2",
+          "message": "Update docs to specify to use Resource APIs to work with Resource (#1686)",
+          "timestamp": "2021-03-11T18:55:08-08:00",
+          "tree_id": "7ae56ab818db51d52dbcaf0b79c773239f4b8595",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/a46b4c2039275b4c480b3ef3a3ca530fd443c0a2"
+        },
+        "date": 1615519873884,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1868.6971930335628,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000630553063164872",
+            "extra": "mean: 535.132178572304 usec\nrounds: 84"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2794.543772078359,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009157702810976535",
+            "extra": "mean: 357.84016338963255 usec\nrounds: 2289"
           }
         ]
       }
