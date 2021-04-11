@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1618167426448,
+  "lastUpdate": 1618167474445,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -5900,6 +5900,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000028571025888188726",
             "extra": "mean: 10.995101202208675 usec\nrounds: 192308"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "christian.neumueller@dynatrace.com",
+            "name": "Christian Neumüller",
+            "username": "Oberon00"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "6f8c077fa5349d445358b879fc83c139a0c22cff",
+          "message": "Fix eachdist.py not printing invoked commands. (#1758)\n\nI observed the following pattern:\r\n```\r\n<output of cmd 1>\r\n<output of cmd 2>\r\n>>> cmd1\r\n>>> cmd2\r\n```\r\n\r\nThe `>>> cmd` header should come immediately before the command output to facilitate debugging & progress reporting.",
+          "timestamp": "2021-04-09T11:23:24-07:00",
+          "tree_id": "47c994ef4364361ef05e198b2fa6822b4c8f6f37",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/6f8c077fa5349d445358b879fc83c139a0c22cff"
+        },
+        "date": 1618167473242,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 222468.22577649215,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000011676729011030582",
+            "extra": "mean: 4.495023936607797 usec\nrounds: 172414"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 113906.12942657992,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000021093854658285528",
+            "extra": "mean: 8.779158812911527 usec\nrounds: 103093"
           }
         ]
       }
