@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619226492630,
+  "lastUpdate": 1619226501626,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -8298,6 +8298,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009630457906498389",
             "extra": "mean: 368.89931569754776 usec\nrounds: 3440"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d8ddb9bf83834e566ef2e17d097741c17f7bc774",
+          "message": "adding getting started to website docs (#1788)",
+          "timestamp": "2021-04-23T13:48:05-07:00",
+          "tree_id": "52d65621e8175169444225c9917aa7f077f5a0d8",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/d8ddb9bf83834e566ef2e17d097741c17f7bc774"
+        },
+        "date": 1619226498351,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1934.497788800372,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0001444278994310789",
+            "extra": "mean: 516.9300300002533 usec\nrounds: 200"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2737.9920832859234,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009849912683274312",
+            "extra": "mean: 365.23115099729523 usec\nrounds: 4265"
           }
         ]
       }
