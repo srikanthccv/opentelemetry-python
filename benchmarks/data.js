@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619226501626,
+  "lastUpdate": 1619226510526,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -11496,6 +11496,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00094287994017874",
             "extra": "mean: 275.74314432439 usec\nrounds: 5453"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d8ddb9bf83834e566ef2e17d097741c17f7bc774",
+          "message": "adding getting started to website docs (#1788)",
+          "timestamp": "2021-04-23T13:48:05-07:00",
+          "tree_id": "52d65621e8175169444225c9917aa7f077f5a0d8",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/d8ddb9bf83834e566ef2e17d097741c17f7bc774"
+        },
+        "date": 1619226509372,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2880.3341458289556,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000024571081554556852",
+            "extra": "mean: 347.1819411814117 usec\nrounds: 221"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3918.0164980266986,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008897095888748495",
+            "extra": "mean: 255.23118662303952 usec\nrounds: 5203"
           }
         ]
       }
