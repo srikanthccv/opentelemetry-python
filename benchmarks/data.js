@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620658132225,
+  "lastUpdate": 1620658137452,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -11000,6 +11000,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009392183084586667",
             "extra": "mean: 248.44429235865883 usec\nrounds: 5418"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mario.jonke@dynatrace.com",
+            "name": "Mario Jonke",
+            "username": "mariojonke"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8a1cbf7cea2abe35bb68b8d02786a42ab19621d6",
+          "message": "Make propagators conform to spec (#1811)\n\n* do not modify / set an invalid span in the passed context in case\r\n  a propagator did not manage to extract\r\n* in case no context is passed to propagator.extract assume the root\r\n  context as default so that a new trace is started instead of continung\r\n  the current active trace in case extraction fails\r\n* fix also jaeger propagator which compared int with str trace/span ids\r\n  when checking for validity in extract",
+          "timestamp": "2021-05-07T17:50:59-07:00",
+          "tree_id": "d84c37beb92094ea00da87b230ada2f15b300b7a",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/8a1cbf7cea2abe35bb68b8d02786a42ab19621d6"
+        },
+        "date": 1620658135730,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2704.242659272185,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000170218037810931",
+            "extra": "mean: 369.7892999991126 usec\nrounds: 40"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3912.4093476328194,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008722821753077938",
+            "extra": "mean: 255.5969764782011 usec\nrounds: 4634"
           }
         ]
       }
