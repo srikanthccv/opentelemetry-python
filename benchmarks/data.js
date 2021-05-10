@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620658128342,
+  "lastUpdate": 1620658132225,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -2358,6 +2358,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000004490593374410725",
             "extra": "mean: 53.1341243886863 usec\nrounds: 6544"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mario.jonke@dynatrace.com",
+            "name": "Mario Jonke",
+            "username": "mariojonke"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8a1cbf7cea2abe35bb68b8d02786a42ab19621d6",
+          "message": "Make propagators conform to spec (#1811)\n\n* do not modify / set an invalid span in the passed context in case\r\n  a propagator did not manage to extract\r\n* in case no context is passed to propagator.extract assume the root\r\n  context as default so that a new trace is started instead of continung\r\n  the current active trace in case extraction fails\r\n* fix also jaeger propagator which compared int with str trace/span ids\r\n  when checking for validity in extract",
+          "timestamp": "2021-05-07T17:50:59-07:00",
+          "tree_id": "d84c37beb92094ea00da87b230ada2f15b300b7a",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/8a1cbf7cea2abe35bb68b8d02786a42ab19621d6"
+        },
+        "date": 1620658130813,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 25080.658603423526,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015673146843193572",
+            "extra": "mean: 39.87136126734325 usec\nrounds: 4797"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 18290.901243383716,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017261618290665236",
+            "extra": "mean: 54.67199164730745 usec\nrounds: 6465"
           }
         ]
       }
