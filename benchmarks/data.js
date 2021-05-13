@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620911436710,
+  "lastUpdate": 1620911443170,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -14464,6 +14464,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000006268152046568843",
             "extra": "mean: 9.681952567429457 usec\nrounds: 27323"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "42213c41e98b2c058b53ba1b3ff3525e2e86a7ff",
+          "message": "[chore] bump 1.3.0.dev0 & 0.22.dev0 versions (#1843)",
+          "timestamp": "2021-05-12T11:30:09-07:00",
+          "tree_id": "cff4b947ba375ce45b9501e8ece72600c0bcb9cb",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/42213c41e98b2c058b53ba1b3ff3525e2e86a7ff"
+        },
+        "date": 1620911441272,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 64168.15664662653,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000034551437325781926",
+            "extra": "mean: 15.58405371541201 usec\nrounds: 10537"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 106536.57214802923,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00002730970655182942",
+            "extra": "mean: 9.386448051008543 usec\nrounds: 47845"
           }
         ]
       }
