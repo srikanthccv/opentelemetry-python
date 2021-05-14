@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1621013230191,
+  "lastUpdate": 1621013246635,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -10694,6 +10694,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009340227190538214",
             "extra": "mean: 344.19960385279694 usec\nrounds: 4049"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f816287e5ff0e2d18a1001e11fd0ad7e070e3b2e",
+          "message": "Update transient errors retry timeout and retryable status codes (#1842)",
+          "timestamp": "2021-05-14T09:38:38-07:00",
+          "tree_id": "97ff8dfdbb66a35afe06c2400fbcfa2d5ed5d8d1",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/f816287e5ff0e2d18a1001e11fd0ad7e070e3b2e"
+        },
+        "date": 1621013243754,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1878.0617623602636,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00006445120657132867",
+            "extra": "mean: 532.4638518507745 usec\nrounds: 27"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2556.6566016662896,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009832856779144901",
+            "extra": "mean: 391.1358292499096 usec\nrounds: 3959"
           }
         ]
       }
