@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1621013202254,
+  "lastUpdate": 1621013205628,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -3918,6 +3918,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0001442334542583528",
             "extra": "mean: 106.54387733923217 usec\nrounds: 5397"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f816287e5ff0e2d18a1001e11fd0ad7e070e3b2e",
+          "message": "Update transient errors retry timeout and retryable status codes (#1842)",
+          "timestamp": "2021-05-14T09:38:38-07:00",
+          "tree_id": "97ff8dfdbb66a35afe06c2400fbcfa2d5ed5d8d1",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/f816287e5ff0e2d18a1001e11fd0ad7e070e3b2e"
+        },
+        "date": 1621013203467,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 13442.505709583167,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003264240853158315",
+            "extra": "mean: 74.39089271035978 usec\nrounds: 1454"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 9353.533790013958,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004439918127504441",
+            "extra": "mean: 106.91146495537573 usec\nrounds: 3467"
           }
         ]
       }
