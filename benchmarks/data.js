@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1621784225090,
+  "lastUpdate": 1621784247481,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -9666,6 +9666,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000986329366221573",
             "extra": "mean: 375.9706771593418 usec\nrounds: 3844"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "elindy26@gmail.com",
+            "name": "Eddy Lin",
+            "username": "eddyleelin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2098c5644588cd4e766eb8e31a1ca26c4e00ea46",
+          "message": "Change AttributeValue sequences from optional to nonoptional (#1855)",
+          "timestamp": "2021-05-21T13:15:12-07:00",
+          "tree_id": "ef1aa5379043deef6a2713f10f164c02fed1930f",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/2098c5644588cd4e766eb8e31a1ca26c4e00ea46"
+        },
+        "date": 1621784246045,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2417.723683657756,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000633940584695889",
+            "extra": "mean: 413.61219512359975 usec\nrounds: 41"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3521.2418629678164,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008503996882883288",
+            "extra": "mean: 283.9907166039335 usec\nrounds: 4499"
           }
         ]
       }
