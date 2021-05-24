@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1621877754399,
+  "lastUpdate": 1621877772266,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -13890,6 +13890,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008813716423002608",
             "extra": "mean: 266.9289638962962 usec\nrounds: 5041"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "33990804+c-kruse@users.noreply.github.com",
+            "name": "Christian Kruse",
+            "username": "c-kruse"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ef7a415204963b89cdb98974d9a46b53bc762f5b",
+          "message": "Trace SDK does not raise when Span attribute and link limits are exceeded (#1856)",
+          "timestamp": "2021-05-24T09:29:51-07:00",
+          "tree_id": "7f560bc6fab216848d84b01117c92f56f2f16492",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/ef7a415204963b89cdb98974d9a46b53bc762f5b"
+        },
+        "date": 1621877770346,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2076.3323141278574,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000054550828398211794",
+            "extra": "mean: 481.6184736883219 usec\nrounds: 38"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3097.678096470302,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0010152279351873508",
+            "extra": "mean: 322.8224395360724 usec\nrounds: 5003"
           }
         ]
       }
