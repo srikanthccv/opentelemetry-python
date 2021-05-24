@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1621877646743,
+  "lastUpdate": 1621877650962,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -14728,6 +14728,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000009678962536536293",
             "extra": "mean: 7.838114633212233 usec\nrounds: 51547"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "33990804+c-kruse@users.noreply.github.com",
+            "name": "Christian Kruse",
+            "username": "c-kruse"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "ef7a415204963b89cdb98974d9a46b53bc762f5b",
+          "message": "Trace SDK does not raise when Span attribute and link limits are exceeded (#1856)",
+          "timestamp": "2021-05-24T09:29:51-07:00",
+          "tree_id": "7f560bc6fab216848d84b01117c92f56f2f16492",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/ef7a415204963b89cdb98974d9a46b53bc762f5b"
+        },
+        "date": 1621877649414,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 85977.1483899858,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014466018092477175",
+            "extra": "mean: 11.630997523482359 usec\nrounds: 11710"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 144029.91736548935,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011871302917770919",
+            "extra": "mean: 6.943001969947722 usec\nrounds: 50762"
           }
         ]
       }
