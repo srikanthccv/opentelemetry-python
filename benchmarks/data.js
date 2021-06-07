@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1623085876580,
+  "lastUpdate": 1623085889200,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -2852,6 +2852,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000016126728306002066",
             "extra": "mean: 54.10839783301452 usec\nrounds: 6553"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7f7151572045281ba186ac3ccf8de3e0dd0d36bd",
+          "message": "Add support for OTEL_EXPORTER_JAEGER_TIMEOUT (#1863)",
+          "timestamp": "2021-06-04T11:06:57-07:00",
+          "tree_id": "8a83e4d59043559f327a25258419eb1d65931bd3",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/7f7151572045281ba186ac3ccf8de3e0dd0d36bd"
+        },
+        "date": 1623085887909,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 30257.298283933953,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000016756808688820423",
+            "extra": "mean: 33.04987744166771 usec\nrounds: 5222"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 22543.860429567205,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000026997950244720994",
+            "extra": "mean: 44.35797511807067 usec\nrounds: 7837"
           }
         ]
       }
