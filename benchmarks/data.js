@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1623329570888,
+  "lastUpdate": 1623329595601,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -11986,6 +11986,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009407419014447068",
             "extra": "mean: 354.8940498797493 usec\nrounds: 4571"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "robertsben@users.noreply.github.com",
+            "name": "Ben Roberts",
+            "username": "robertsben"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a47a202d67d7f58cbc67efc9a3fba00d387a67c9",
+          "message": "Fix #1848 opentracing shim exception reporting (#1878)",
+          "timestamp": "2021-06-09T09:31:44-07:00",
+          "tree_id": "3a32ec5f9b5e4849c58a1f3d983579863ad37285",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/a47a202d67d7f58cbc67efc9a3fba00d387a67c9"
+        },
+        "date": 1623329593525,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1972.6925802489561,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00008859027937002245",
+            "extra": "mean: 506.9213571400967 usec\nrounds: 28"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2488.763365855442,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0010924742283174229",
+            "extra": "mean: 401.80597871195295 usec\nrounds: 3617"
           }
         ]
       }
