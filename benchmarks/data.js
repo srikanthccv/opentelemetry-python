@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1625173842802,
+  "lastUpdate": 1625173845933,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -3194,6 +3194,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000034728420687993586",
             "extra": "mean: 71.17995573294915 usec\nrounds: 1378"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d724573ef91abb880f0e1bd3c4431eb2a5ab0313",
+          "message": "Report dropped attributes/events/links for otlp/jaeger/zipkin exporters (#1893)",
+          "timestamp": "2021-06-30T15:46:07-07:00",
+          "tree_id": "1de05015661b6ae07aa102ac5ec74273c48f7af0",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/d724573ef91abb880f0e1bd3c4431eb2a5ab0313"
+        },
+        "date": 1625173843918,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 23299.952811949348,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000022872462724272346",
+            "extra": "mean: 42.91854185589386 usec\nrounds: 4396"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 17272.71895965743,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002595372216711473",
+            "extra": "mean: 57.89476470587078 usec\nrounds: 6562"
           }
         ]
       }
