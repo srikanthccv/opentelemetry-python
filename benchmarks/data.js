@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1625173794858,
+  "lastUpdate": 1625173799654,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -4754,6 +4754,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00000777143733869843",
             "extra": "mean: 81.92946173526217 usec\nrounds: 4691"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d724573ef91abb880f0e1bd3c4431eb2a5ab0313",
+          "message": "Report dropped attributes/events/links for otlp/jaeger/zipkin exporters (#1893)",
+          "timestamp": "2021-06-30T15:46:07-07:00",
+          "tree_id": "1de05015661b6ae07aa102ac5ec74273c48f7af0",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/d724573ef91abb880f0e1bd3c4431eb2a5ab0313"
+        },
+        "date": 1625173797475,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 15478.403966696374,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000017844037162685625",
+            "extra": "mean: 64.60614428668607 usec\nrounds: 1899"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 9429.975293117339,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000028051115162559244",
+            "extra": "mean: 106.04481654685465 usec\nrounds: 6394"
           }
         ]
       }
