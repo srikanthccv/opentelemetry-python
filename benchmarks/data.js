@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1625173838624,
+  "lastUpdate": 1625173842802,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -6390,6 +6390,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000006271792223675579",
             "extra": "mean: 54.736899304424895 usec\nrounds: 6614"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "d724573ef91abb880f0e1bd3c4431eb2a5ab0313",
+          "message": "Report dropped attributes/events/links for otlp/jaeger/zipkin exporters (#1893)",
+          "timestamp": "2021-06-30T15:46:07-07:00",
+          "tree_id": "1de05015661b6ae07aa102ac5ec74273c48f7af0",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/d724573ef91abb880f0e1bd3c4431eb2a5ab0313"
+        },
+        "date": 1625173840838,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 18887.487225934587,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000021777354136665615",
+            "extra": "mean: 52.9451052984375 usec\nrounds: 4473"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13465.606757360625,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000726568057132143",
+            "extra": "mean: 74.26327071770278 usec\nrounds: 9183"
           }
         ]
       }
