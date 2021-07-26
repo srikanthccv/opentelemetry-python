@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1627319876990,
+  "lastUpdate": 1627319883916,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -6846,6 +6846,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000013312452641489301",
             "extra": "mean: 50.022456245286634 usec\nrounds: 6845"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "191a55ce0478822cb054c48495a4ed227a4579d8",
+          "message": "Default configurators do more for distros (#1937)",
+          "timestamp": "2021-07-23T10:40:08-07:00",
+          "tree_id": "77efa28fe6bf96de07ee251c0fa29ef5f004608e",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/191a55ce0478822cb054c48495a4ed227a4579d8"
+        },
+        "date": 1627319880530,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 27365.632162340342,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010586997154247257",
+            "extra": "mean: 36.54218525147635 usec\nrounds: 5031"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20059.222369005416,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017337538037216258",
+            "extra": "mean: 49.852381194255756 usec\nrounds: 6498"
           }
         ]
       }
