@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1627425092093,
+  "lastUpdate": 1627425115471,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -18414,6 +18414,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 3.6598122166375893e-7",
             "extra": "mean: 6.326100091212401 usec\nrounds: 52632"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "39927787cc911af8567731728a37afc24f935d1e",
+          "message": "Back to develop after 1.4.0 release (#1985)\n\n* Back to develop after 1.4.0 release\r\n\r\n* update\r\n\r\n* Update SHA\r\n\r\n* Update missed files\r\n\r\n* Update distro version",
+          "timestamp": "2021-07-27T11:26:40-06:00",
+          "tree_id": "68013ba66c56a931b0969a8d1094b37e12f63325",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/39927787cc911af8567731728a37afc24f935d1e"
+        },
+        "date": 1627425113608,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 74979.66462025233,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004794454123742095",
+            "extra": "mean: 13.336949492434723 usec\nrounds: 12315"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 130126.64629818585,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00002598253690310656",
+            "extra": "mean: 7.684821121943734 usec\nrounds: 51018"
           }
         ]
       }
