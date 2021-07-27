@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1627425161482,
+  "lastUpdate": 1627425168511,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -3498,6 +3498,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000014038071826448803",
             "extra": "mean: 49.674931204042835 usec\nrounds: 7108"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "39927787cc911af8567731728a37afc24f935d1e",
+          "message": "Back to develop after 1.4.0 release (#1985)\n\n* Back to develop after 1.4.0 release\r\n\r\n* update\r\n\r\n* Update SHA\r\n\r\n* Update missed files\r\n\r\n* Update distro version",
+          "timestamp": "2021-07-27T11:26:40-06:00",
+          "tree_id": "68013ba66c56a931b0969a8d1094b37e12f63325",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/39927787cc911af8567731728a37afc24f935d1e"
+        },
+        "date": 1627425166571,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 27036.6874635682,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010213736102780492",
+            "extra": "mean: 36.98677958782839 usec\nrounds: 5095"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 19644.983972780377,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000013001215722272845",
+            "extra": "mean: 50.90357932516393 usec\nrounds: 6549"
           }
         ]
       }
