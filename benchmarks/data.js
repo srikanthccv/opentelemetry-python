@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1628427442990,
+  "lastUpdate": 1628427476164,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -17538,6 +17538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007475276125550145",
             "extra": "mean: 187.750397654653 usec\nrounds: 9209"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e2eb73c3cbfca9180def85eb7639f22d3a7a77b7",
+          "message": "Remove unused imports (#2007)\n\nFixes #2006\r\n\r\nCo-authored-by: alrex <aboten@lightstep.com>",
+          "timestamp": "2021-08-04T09:13:42-06:00",
+          "tree_id": "3b512de99a18621865df1d001ab9264343ce6984",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/e2eb73c3cbfca9180def85eb7639f22d3a7a77b7"
+        },
+        "date": 1628427474608,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 4045.55741874704,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009431391928042336",
+            "extra": "mean: 247.18472548826475 usec\nrounds: 51"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7207.983487223974,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000680159590609535",
+            "extra": "mean: 138.7350570062324 usec\nrounds: 8157"
           }
         ]
       }
