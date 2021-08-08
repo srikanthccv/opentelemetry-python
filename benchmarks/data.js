@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1628427334551,
+  "lastUpdate": 1628427346772,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -7150,6 +7150,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000008951674571487607",
             "extra": "mean: 43.20387824768486 usec\nrounds: 7236"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e2eb73c3cbfca9180def85eb7639f22d3a7a77b7",
+          "message": "Remove unused imports (#2007)\n\nFixes #2006\r\n\r\nCo-authored-by: alrex <aboten@lightstep.com>",
+          "timestamp": "2021-08-04T09:13:42-06:00",
+          "tree_id": "3b512de99a18621865df1d001ab9264343ce6984",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/e2eb73c3cbfca9180def85eb7639f22d3a7a77b7"
+        },
+        "date": 1628427345181,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 27263.687026298758,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010251972369421908",
+            "extra": "mean: 36.67882480588163 usec\nrounds: 5531"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20138.86107274093,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011486390583146487",
+            "extra": "mean: 49.655240998387725 usec\nrounds: 7332"
           }
         ]
       }
