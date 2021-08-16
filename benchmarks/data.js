@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1629154619978,
+  "lastUpdate": 1629154623022,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -12478,6 +12478,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008099096503835891",
             "extra": "mean: 203.3968769978054 usec\nrounds: 6382"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "code@musicinmybrain.net",
+            "name": "Ben Beasley",
+            "username": "musicinmybrain"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "93fa54da8ae9deb144808efe04d08f7dea391b56",
+          "message": "Fix typos of “it's” where “its” is meant (#2039)",
+          "timestamp": "2021-08-16T12:13:04-07:00",
+          "tree_id": "f0a9931dbdb619e9ab94dc7737e66a6b314b9fe2",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/93fa54da8ae9deb144808efe04d08f7dea391b56"
+        },
+        "date": 1629154620563,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2109.413812143975,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00027508466634068785",
+            "extra": "mean: 474.06535135162295 usec\nrounds: 37"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4671.40830617025,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007887454168445637",
+            "extra": "mean: 214.0682069428925 usec\nrounds: 6712"
           }
         ]
       }
