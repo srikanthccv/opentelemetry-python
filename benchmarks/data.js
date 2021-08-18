@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1629310805890,
+  "lastUpdate": 1629310822753,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -26404,6 +26404,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 4.1945907820913e-7",
             "extra": "mean: 1.5819769855399906 usec\nrounds: 71429"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4e0642b08967537e6c80fa8992615d4a93492671",
+          "message": "Remove contextvars workaround (#2009)",
+          "timestamp": "2021-08-16T16:06:39-07:00",
+          "tree_id": "cf39062b683618aa1208e0e79a0c4b05f4dda5cd",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/4e0642b08967537e6c80fa8992615d4a93492671"
+        },
+        "date": 1629310820652,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 638543.5681286954,
+            "unit": "iter/sec",
+            "range": "stddev: 3.619328614672753e-7",
+            "extra": "mean: 1.566063852041656 usec\nrounds: 68961"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 943182.9455240164,
+            "unit": "iter/sec",
+            "range": "stddev: 3.226394157213692e-7",
+            "extra": "mean: 1.060239696599243 usec\nrounds: 100001"
           }
         ]
       }
