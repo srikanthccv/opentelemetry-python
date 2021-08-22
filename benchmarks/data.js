@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1629630597981,
+  "lastUpdate": 1629630630624,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -13010,6 +13010,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007927794618017802",
             "extra": "mean: 209.78655766108812 usec\nrounds: 7969"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1bb44392d61fde496b6c2caa030f85b532792418",
+          "message": "Update getting-started guide (#2053)",
+          "timestamp": "2021-08-19T12:13:03-07:00",
+          "tree_id": "6686e1936747df6222114b1be8c1be94411c6f9a",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/1bb44392d61fde496b6c2caa030f85b532792418"
+        },
+        "date": 1629630628818,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3068.4515037071164,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003825919824772762",
+            "extra": "mean: 325.89728036824465 usec\nrounds: 1630"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4968.849285521082,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007887439648277337",
+            "extra": "mean: 201.2538401826632 usec\nrounds: 6570"
           }
         ]
       }
