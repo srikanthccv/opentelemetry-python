@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1630074435553,
+  "lastUpdate": 1630074446580,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -17004,6 +17004,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007541141689684707",
             "extra": "mean: 175.39872722977285 usec\nrounds: 8454"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3b190f5af766294c5064d2787ab6c8681be1619d",
+          "message": "updating changelogs and version to 1.5.0-0.24b0 (#2069)",
+          "timestamp": "2021-08-26T14:54:39+05:30",
+          "tree_id": "39cd2a152e7ed40c259c2ab509c23ef2cebe093a",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/3b190f5af766294c5064d2787ab6c8681be1619d"
+        },
+        "date": 1630074444611,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2765.347425899813,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00006712667557694579",
+            "extra": "mean: 361.61821499684123 usec\nrounds: 1507"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 6002.121091844542,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007222454418692943",
+            "extra": "mean: 166.60776827024742 usec\nrounds: 9209"
           }
         ]
       }
