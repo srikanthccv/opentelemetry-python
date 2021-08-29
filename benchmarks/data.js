@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1630233218072,
+  "lastUpdate": 1630233320678,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -10764,6 +10764,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00001100900447379779",
             "extra": "mean: 6.136371999111857 usec\nrounds: 101011"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "c3dfa360e643d8e8039e430c468522b5ab93b1c7",
+          "message": "Use exact dep versions in getting started docs tests (#2070)",
+          "timestamp": "2021-08-27T10:43:15-07:00",
+          "tree_id": "8db6ad28222f87261a398e99dedc85a67a2a1d50",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/c3dfa360e643d8e8039e430c468522b5ab93b1c7"
+        },
+        "date": 1630233318355,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 226572.08777630073,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000048464436186810855",
+            "extra": "mean: 4.413606326421463 usec\nrounds: 153847"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 156415.58763251925,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000454700443301876",
+            "extra": "mean: 6.393224710758284 usec\nrounds: 112360"
           }
         ]
       }
