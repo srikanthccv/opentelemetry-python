@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1631899527121,
+  "lastUpdate": 1631899581109,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -13922,6 +13922,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007341507775050699",
             "extra": "mean: 177.26133342379615 usec\nrounds: 7375"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "c40f10dedf44861d97186bb78e173699bbefcb12",
+          "message": "remove dependency on contrib repo to run tox (#2108)",
+          "timestamp": "2021-09-14T11:07:13-07:00",
+          "tree_id": "ae6e48083ef1dc2306e3efc50da832010944f41d",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/c40f10dedf44861d97186bb78e173699bbefcb12"
+        },
+        "date": 1631899578305,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3235.7758414143445,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005272282317537381",
+            "extra": "mean: 309.0448934073579 usec\nrounds: 1623"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 5464.799849877544,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007768786269129846",
+            "extra": "mean: 182.98931845095993 usec\nrounds: 7593"
           }
         ]
       }
