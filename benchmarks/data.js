@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1631899921851,
+  "lastUpdate": 1632163989756,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -29602,6 +29602,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00004400898553481352",
             "extra": "mean: 93.1863187281121 usec\nrounds: 7988"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "796e070e795701b2cd06efcaa81c453d7046b9c0",
+          "message": "Fix incorrect headers parsing via environment variables (#2103)",
+          "timestamp": "2021-09-20T10:42:41-07:00",
+          "tree_id": "e3557c24a72d9eb561e2dc4800915f76b214602d",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/796e070e795701b2cd06efcaa81c453d7046b9c0"
+        },
+        "date": 1632163986584,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 14307.753558336617,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001733487920543372",
+            "extra": "mean: 69.89217391274788 usec\nrounds: 23"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 10433.632933534338,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003173076306350248",
+            "extra": "mean: 95.84389314540081 usec\nrounds: 6448"
           }
         ]
       }
