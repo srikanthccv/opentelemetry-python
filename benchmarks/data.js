@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632164233508,
+  "lastUpdate": 1632164235362,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -29948,6 +29948,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000011098045053158337",
             "extra": "mean: 47.135559431509606 usec\nrounds: 7740"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "796e070e795701b2cd06efcaa81c453d7046b9c0",
+          "message": "Fix incorrect headers parsing via environment variables (#2103)",
+          "timestamp": "2021-09-20T10:42:41-07:00",
+          "tree_id": "e3557c24a72d9eb561e2dc4800915f76b214602d",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/796e070e795701b2cd06efcaa81c453d7046b9c0"
+        },
+        "date": 1632164231423,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 34929.819948043885,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002296452734206346",
+            "extra": "mean: 28.62883351495779 usec\nrounds: 6427"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 25287.959240445965,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000028935568233601905",
+            "extra": "mean: 39.54451169790657 usec\nrounds: 7950"
           }
         ]
       }
