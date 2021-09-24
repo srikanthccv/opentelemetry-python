@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632473706584,
+  "lastUpdate": 1632473720654,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -30366,6 +30366,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000028935568233601905",
             "extra": "mean: 39.54451169790657 usec\nrounds: 7950"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8b92d57aa8483a55260a9f1c964d67e411f71691",
+          "message": "Add entry point for exporters with default protocol (#2093)",
+          "timestamp": "2021-09-23T09:54:35-07:00",
+          "tree_id": "6f43970b662377e32f5ada3049e7e81a7eeade0d",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/8b92d57aa8483a55260a9f1c964d67e411f71691"
+        },
+        "date": 1632473718230,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 28741.508029951376,
+            "unit": "iter/sec",
+            "range": "stddev: 9.25559076911386e-7",
+            "extra": "mean: 34.79288557016233 usec\nrounds: 5357"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 21165.708870052193,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011764990372120258",
+            "extra": "mean: 47.24623239124871 usec\nrounds: 7113"
           }
         ]
       }
