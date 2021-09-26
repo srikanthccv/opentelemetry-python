@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632474040008,
+  "lastUpdate": 1632670728715,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -24116,6 +24116,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 3.417053669971487e-7",
             "extra": "mean: 8.076484870494877 usec\nrounds: 52084"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e6d4b9c253db09b0a26e234cedd9f9eb16e2d383",
+          "message": "Add support for OTEL_ATTRIBUTE_COUNT_LIMIT (#2139)\n\n* Add support for OTEL_ATTRIBUTE_COUNT_LIMIT\r\n\r\nFixes #2055\r\nFixes #2111\r\n\r\n* Update opentelemetry-sdk/src/opentelemetry/sdk/trace/__init__.py\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
+          "timestamp": "2021-09-26T04:51:55+05:30",
+          "tree_id": "52f69b321783710504e233b43f49a690412e2c51",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/e6d4b9c253db09b0a26e234cedd9f9eb16e2d383"
+        },
+        "date": 1632670726315,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 73952.49977631694,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000023079543721931975",
+            "extra": "mean: 13.522193340653605 usec\nrounds: 9941"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 125071.50630816002,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017577212013107085",
+            "extra": "mean: 7.995426212714904 usec\nrounds: 47847"
           }
         ]
       }
