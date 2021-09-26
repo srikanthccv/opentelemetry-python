@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632670855034,
+  "lastUpdate": 1632670870739,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -16166,6 +16166,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008641423274220835",
             "extra": "mean: 236.94575746650813 usec\nrounds: 5525"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e6d4b9c253db09b0a26e234cedd9f9eb16e2d383",
+          "message": "Add support for OTEL_ATTRIBUTE_COUNT_LIMIT (#2139)\n\n* Add support for OTEL_ATTRIBUTE_COUNT_LIMIT\r\n\r\nFixes #2055\r\nFixes #2111\r\n\r\n* Update opentelemetry-sdk/src/opentelemetry/sdk/trace/__init__.py\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
+          "timestamp": "2021-09-26T04:51:55+05:30",
+          "tree_id": "52f69b321783710504e233b43f49a690412e2c51",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/e6d4b9c253db09b0a26e234cedd9f9eb16e2d383"
+        },
+        "date": 1632670868269,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2060.9541646135035,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0003029419653946852",
+            "extra": "mean: 485.21214938689957 usec\nrounds: 1225"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4598.996178806494,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008505479659735773",
+            "extra": "mean: 217.43875426735283 usec\nrounds: 7850"
           }
         ]
       }
