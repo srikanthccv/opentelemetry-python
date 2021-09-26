@@ -13,13 +13,18 @@ import typing_extensions
 DESCRIPTOR: google.protobuf.descriptor.FileDescriptor = ...
 
 class Resource(google.protobuf.message.Message):
+    """Resource information."""
     DESCRIPTOR: google.protobuf.descriptor.Descriptor = ...
     ATTRIBUTES_FIELD_NUMBER: builtins.int
     DROPPED_ATTRIBUTES_COUNT_FIELD_NUMBER: builtins.int
-    dropped_attributes_count: builtins.int = ...
-
     @property
-    def attributes(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[opentelemetry.proto.common.v1.common_pb2.KeyValue]: ...
+    def attributes(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[opentelemetry.proto.common.v1.common_pb2.KeyValue]:
+        """Set of labels that describe the resource."""
+        pass
+    dropped_attributes_count: builtins.int = ...
+    """dropped_attributes_count is the number of dropped attributes. If the value is 0, then
+    no attributes were dropped.
+    """
 
     def __init__(self,
         *,

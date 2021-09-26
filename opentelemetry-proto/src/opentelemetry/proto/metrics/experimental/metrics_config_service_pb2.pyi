@@ -16,10 +16,14 @@ class MetricConfigRequest(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor = ...
     RESOURCE_FIELD_NUMBER: builtins.int
     LAST_KNOWN_FINGERPRINT_FIELD_NUMBER: builtins.int
-    last_known_fingerprint: builtins.bytes = ...
-
     @property
-    def resource(self) -> opentelemetry.proto.resource.v1.resource_pb2.Resource: ...
+    def resource(self) -> opentelemetry.proto.resource.v1.resource_pb2.Resource:
+        """Required. The resource for which configuration should be returned."""
+        pass
+    last_known_fingerprint: builtins.bytes = ...
+    """Optional. The value of MetricConfigResponse.fingerprint for the last
+    configuration that the caller received and successfully applied.
+    """
 
     def __init__(self,
         *,
@@ -33,13 +37,24 @@ global___MetricConfigRequest = MetricConfigRequest
 class MetricConfigResponse(google.protobuf.message.Message):
     DESCRIPTOR: google.protobuf.descriptor.Descriptor = ...
     class Schedule(google.protobuf.message.Message):
+        """A Schedule is used to apply a particular scheduling configuration to
+        a metric. If a metric name matches a schedule's patterns, then the metric
+        adopts the configuration specified by the schedule.
+        """
         DESCRIPTOR: google.protobuf.descriptor.Descriptor = ...
         class Pattern(google.protobuf.message.Message):
+            """A light-weight pattern that can match 1 or more
+            metrics, for which this schedule will apply. The string is used to
+            match against metric names. It should not exceed 100k characters.
+            """
             DESCRIPTOR: google.protobuf.descriptor.Descriptor = ...
             EQUALS_FIELD_NUMBER: builtins.int
             STARTS_WITH_FIELD_NUMBER: builtins.int
             equals: typing.Text = ...
+            """matches the metric name exactly"""
+
             starts_with: typing.Text = ...
+            """prefix-matches the metric name"""
 
             def __init__(self,
                 *,
@@ -48,18 +63,25 @@ class MetricConfigResponse(google.protobuf.message.Message):
                 ) -> None: ...
             def HasField(self, field_name: typing_extensions.Literal[u"equals",b"equals",u"match",b"match",u"starts_with",b"starts_with"]) -> builtins.bool: ...
             def ClearField(self, field_name: typing_extensions.Literal[u"equals",b"equals",u"match",b"match",u"starts_with",b"starts_with"]) -> None: ...
-            def WhichOneof(self, oneof_group: typing_extensions.Literal[u"match",b"match"]) -> typing_extensions.Literal["equals","starts_with"]: ...
+            def WhichOneof(self, oneof_group: typing_extensions.Literal[u"match",b"match"]) -> typing.Optional[typing_extensions.Literal["equals","starts_with"]]: ...
 
         EXCLUSION_PATTERNS_FIELD_NUMBER: builtins.int
         INCLUSION_PATTERNS_FIELD_NUMBER: builtins.int
         PERIOD_SEC_FIELD_NUMBER: builtins.int
-        period_sec: builtins.int = ...
-
         @property
-        def exclusion_patterns(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___MetricConfigResponse.Schedule.Pattern]: ...
-
+        def exclusion_patterns(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___MetricConfigResponse.Schedule.Pattern]:
+            """Metrics with names that match a rule in the inclusion_patterns are
+            targeted by this schedule. Metrics that match the exclusion_patterns
+            are not targeted for this schedule, even if they match an inclusion
+            pattern.
+            """
+            pass
         @property
         def inclusion_patterns(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___MetricConfigResponse.Schedule.Pattern]: ...
+        period_sec: builtins.int = ...
+        """Describes the collection period for each metric in seconds.
+        A period of 0 means to not export.
+        """
 
         def __init__(self,
             *,
@@ -73,10 +95,36 @@ class MetricConfigResponse(google.protobuf.message.Message):
     SCHEDULES_FIELD_NUMBER: builtins.int
     SUGGESTED_WAIT_TIME_SEC_FIELD_NUMBER: builtins.int
     fingerprint: builtins.bytes = ...
-    suggested_wait_time_sec: builtins.int = ...
+    """Optional. The fingerprint associated with this MetricConfigResponse. Each
+    change in configs yields a different fingerprint. The resource SHOULD copy
+    this value to MetricConfigRequest.last_known_fingerprint for the next
+    configuration request. If there are no changes between fingerprint and
+    MetricConfigRequest.last_known_fingerprint, then all other fields besides
+    fingerprint in the response are optional, or the same as the last update if
+    present.
+
+    The exact mechanics of generating the fingerprint is up to the
+    implementation. However, a fingerprint must be deterministically determined
+    by the configurations -- the same configuration will generate the same
+    fingerprint on any instance of an implementation. Hence using a timestamp is
+    unacceptable, but a deterministic hash is fine.
+    """
 
     @property
-    def schedules(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___MetricConfigResponse.Schedule]: ...
+    def schedules(self) -> google.protobuf.internal.containers.RepeatedCompositeFieldContainer[global___MetricConfigResponse.Schedule]:
+        """A single metric may match multiple schedules. In such cases, the schedule
+        that specifies the smallest period is applied.
+
+        Note, for optimization purposes, it is recommended to use as few schedules
+        as possible to capture all required metric updates. Where you can be
+        conservative, do take full advantage of the inclusion/exclusion patterns to
+        capture as much of your targeted metrics.
+        """
+        pass
+    suggested_wait_time_sec: builtins.int = ...
+    """Optional. The client is suggested to wait this long (in seconds) before
+    pinging the configuration service again.
+    """
 
     def __init__(self,
         *,
