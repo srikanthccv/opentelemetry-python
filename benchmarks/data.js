@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633100919722,
+  "lastUpdate": 1633100938394,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -31316,6 +31316,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000806068723493911",
             "extra": "mean: 65.32668457986692 usec\nrounds: 8411"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "18b5cb046bebab0c70841c662268bb7980c2fd5e",
+          "message": "Load environment variables as options for opentelemetry-instrument (#1969)",
+          "timestamp": "2021-09-29T14:28:56-07:00",
+          "tree_id": "ddc39eaeb30f950e7262e90f896ac7678a3071c3",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/18b5cb046bebab0c70841c662268bb7980c2fd5e"
+        },
+        "date": 1633100936106,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 29068.770206367477,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000018440351972155802",
+            "extra": "mean: 34.40118012907719 usec\nrounds: 5113"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 21200.0987793813,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012451498200322256",
+            "extra": "mean: 47.16959153853451 usec\nrounds: 6571"
           }
         ]
       }
