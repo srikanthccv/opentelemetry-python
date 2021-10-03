@@ -62,7 +62,14 @@ def get_span_with_dropped_attributes_events_links():
             trace_api.Link(
                 trace_sdk._Span(
                     name=f"span{index}",
-                    context=trace_api.INVALID_SPAN_CONTEXT,
+                    context=trace_api.SpanContext(
+                        trace_id=0x000000000000000000000000DEADBEEF,
+                        span_id=0x00000000DEADBEF0,
+                        is_remote=False,
+                        trace_flags=trace_api.TraceFlags(
+                            trace_api.TraceFlags.SAMPLED
+                        ),
+                    ),
                     attributes=attributes,
                 ).get_span_context(),
                 attributes=attributes,

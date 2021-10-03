@@ -756,6 +756,7 @@ class Span(trace_api.Span, ReadableSpan):
         if links is None:
             self._links = self._new_links()
         else:
+            links = [link for link in links if link.context.is_valid]
             for link in links:
                 link._attributes = BoundedAttributes(
                     self._limits.max_link_attributes,

@@ -45,7 +45,12 @@ from opentelemetry.test.spantestutil import (
     get_span_with_dropped_attributes_events_links,
     new_tracer,
 )
-from opentelemetry.trace import StatusCode
+from opentelemetry.trace import (
+    INVALID_SPAN_CONTEXT,
+    Link,
+    SpanContext,
+    StatusCode,
+)
 from opentelemetry.util._time import _time_ns
 
 
@@ -257,6 +262,28 @@ class TestSpanCreation(unittest.TestCase):
         self.assertLess(
             span1.instrumentation_info, span2.instrumentation_info
         )  # Check sortability.
+
+    def test_span_links(self):
+        tracer_provider = trace.TracerProvider()
+        tracer = tracer_provider.get_tracer("instr1")
+        span = tracer.start_span(
+            name="s1",
+            links=[
+                Link(INVALID_SPAN_CONTEXT),
+                Link(
+                    SpanContext(
+                        trace_id=0x000000000000000000000000DEADBEEF,
+                        span_id=0x00000000DEADBEF0,
+                        is_remote=False,
+                        trace_flags=trace_api.TraceFlags(
+                            trace_api.TraceFlags.SAMPLED
+                        ),
+                    )
+                ),
+            ],
+        )
+        # invalid span likns are dropped
+        self.assertEqual(len(span.links), 1)
 
     def test_invalid_instrumentation_info(self):
         tracer_provider = trace.TracerProvider()
