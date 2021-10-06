@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633537225247,
+  "lastUpdate": 1633537272481,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -20806,6 +20806,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006272871368202203",
             "extra": "mean: 132.57482971731332 usec\nrounds: 8204"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "andrew.matteson@appliedbiomath.com",
+            "name": "andrew-matteson",
+            "username": "andrew-matteson"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a0d1267b3aec027b72c39296ea350fa5210332fc",
+          "message": "Update bootstrap_gen.py for jinja2 versions (#2183)",
+          "timestamp": "2021-10-06T20:49:10+05:30",
+          "tree_id": "089f6a682cd0f21695a20a965384ec726f759b08",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/a0d1267b3aec027b72c39296ea350fa5210332fc"
+        },
+        "date": 1633537270124,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3704.5088535572627,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005903209958232898",
+            "extra": "mean: 269.94131733272764 usec\nrounds: 1667"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7529.235615036219,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006447375705381064",
+            "extra": "mean: 132.81560720492735 usec\nrounds: 8190"
           }
         ]
       }
