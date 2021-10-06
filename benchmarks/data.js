@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633536893772,
+  "lastUpdate": 1633536948969,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -31160,6 +31160,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000016709405028412044",
             "extra": "mean: 69.27330336663681 usec\nrounds: 5406"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "andrew.matteson@appliedbiomath.com",
+            "name": "andrew-matteson",
+            "username": "andrew-matteson"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a0d1267b3aec027b72c39296ea350fa5210332fc",
+          "message": "Update bootstrap_gen.py for jinja2 versions (#2183)",
+          "timestamp": "2021-10-06T20:49:10+05:30",
+          "tree_id": "089f6a682cd0f21695a20a965384ec726f759b08",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/a0d1267b3aec027b72c39296ea350fa5210332fc"
+        },
+        "date": 1633536946072,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20334.03548476353,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004775004193949556",
+            "extra": "mean: 49.178629630567364 usec\nrounds: 27"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14584.922026993176,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001046319944050133",
+            "extra": "mean: 68.56395928269215 usec\nrounds: 5354"
           }
         ]
       }
