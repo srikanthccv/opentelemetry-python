@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633829959519,
+  "lastUpdate": 1633830006850,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -26930,6 +26930,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00002250434715727791",
             "extra": "mean: 6.011983734351639 usec\nrounds: 61725"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "65528f7534f1f5f2e8adc7520b6e696a84569c7d",
+          "message": "update OTLP/HTTP example & test port to 4318 (#2016)\n\n* update OTLP/HTTP port to 4318\r\n\r\n* map 4318->55681 in the collector for now\r\n\r\n* update development status\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-10-06T21:13:03Z",
+          "tree_id": "642dad52812000b9ea9d2b760488c96202b5b3b0",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/65528f7534f1f5f2e8adc7520b6e696a84569c7d"
+        },
+        "date": 1633830004108,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 103123.94425671268,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000548687686084649",
+            "extra": "mean: 9.697068970816703 usec\nrounds: 12904"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 198559.447228861,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000031089551323486084",
+            "extra": "mean: 5.036275100259485 usec\nrounds: 60607"
           }
         ]
       }
