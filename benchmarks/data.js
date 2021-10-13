@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634155056169,
+  "lastUpdate": 1634155101652,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -29746,6 +29746,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000003941744545629374",
             "extra": "mean: 5.953155215479532 usec\nrounds: 53764"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ed3d657e489da0152e3604f58cb217a561b0c515",
+          "message": "Make baggage implementation w3c spec complaint (#2167)\n\n* Add regexes to check keys and values\r\n\r\nFixes #2010\r\n\r\n* Fix tests\r\n\r\n* Add changelog\r\n\r\n* Fix test\r\n\r\n* Add checks to set_baggage\r\n\r\n* Fix lint\r\n\r\n* Add changelog entry\r\n\r\n* Fix mypy\r\n\r\n* Fix mypy\r\n\r\n* Cast to string\r\n\r\n* WIP\r\n\r\n* Key value format\r\n\r\n* Mostly done\r\n\r\n* Remove old changelog entry\r\n\r\n* fomat\r\n\r\n* Correct typing\r\n\r\n* Fix lint\r\n\r\n* Fix issues\r\n\r\n* Add CHANGELOG entry\r\n\r\n* Make changes as discussed in SIG meeting\r\n\r\n* Update opentelemetry-api/src/opentelemetry/baggage/__init__.py\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2021-10-13T17:46:02Z",
+          "tree_id": "15ff03479a8c0414ee12ab2ea11cba27c9050c21",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/ed3d657e489da0152e3604f58cb217a561b0c515"
+        },
+        "date": 1634155098104,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 112334.91208961654,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014075637732160682",
+            "extra": "mean: 8.901952041429809 usec\nrounds: 10384"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 168473.38775047922,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001029042318226584",
+            "extra": "mean: 5.93565555576688 usec\nrounds: 51811"
           }
         ]
       }
