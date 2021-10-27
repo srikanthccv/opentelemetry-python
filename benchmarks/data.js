@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635360695268,
+  "lastUpdate": 1635360709002,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -32644,6 +32644,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00007377106257304918",
             "extra": "mean: 86.97473252625538 usec\nrounds: 6610"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45812677+JamesJHPark@users.noreply.github.com",
+            "name": "James",
+            "username": "JamesJHPark"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "210963395fa67b3b10de98dbff43c6bc80173652",
+          "message": "remove `X-B3-ParentSpanId` for B3 propagator as per OpenTelemetry Specification (#2237)\n\n* remove X-B3-ParentSpanId for B3 propagator as per OpenTelemetry specification\r\n\r\n* revert changes - run tests\r\n\r\n* re-commit changes\r\n\r\n* add entry to CHANGELOG\r\n\r\n* remove ParentSpanId in B3SingleFormat",
+          "timestamp": "2021-10-26T20:58:32+05:30",
+          "tree_id": "3f5275a39aa6b5ca3e4bb49b1a86552118c980c1",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/210963395fa67b3b10de98dbff43c6bc80173652"
+        },
+        "date": 1635360705221,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 17068.005621475397,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005387316515909609",
+            "extra": "mean: 58.58915342409864 usec\nrounds: 4556"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13027.200949296921,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004183072557940479",
+            "extra": "mean: 76.76246063080573 usec\nrounds: 8306"
           }
         ]
       }
