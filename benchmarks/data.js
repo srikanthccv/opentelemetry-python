@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635360804742,
+  "lastUpdate": 1635360818231,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -14226,6 +14226,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008538006289959043",
             "extra": "mean: 229.41649980163027 usec\nrounds: 7553"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45812677+JamesJHPark@users.noreply.github.com",
+            "name": "James",
+            "username": "JamesJHPark"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "210963395fa67b3b10de98dbff43c6bc80173652",
+          "message": "remove `X-B3-ParentSpanId` for B3 propagator as per OpenTelemetry Specification (#2237)\n\n* remove X-B3-ParentSpanId for B3 propagator as per OpenTelemetry specification\r\n\r\n* revert changes - run tests\r\n\r\n* re-commit changes\r\n\r\n* add entry to CHANGELOG\r\n\r\n* remove ParentSpanId in B3SingleFormat",
+          "timestamp": "2021-10-26T20:58:32+05:30",
+          "tree_id": "3f5275a39aa6b5ca3e4bb49b1a86552118c980c1",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/210963395fa67b3b10de98dbff43c6bc80173652"
+        },
+        "date": 1635360814711,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2862.278182929467,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00002454452642846154",
+            "extra": "mean: 349.3720512436447 usec\nrounds: 1327"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4817.7474407174195,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008391497063374769",
+            "extra": "mean: 207.5658826671678 usec\nrounds: 5804"
           }
         ]
       }
