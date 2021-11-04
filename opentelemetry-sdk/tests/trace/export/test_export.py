@@ -409,7 +409,7 @@ class TestBatchSpanProcessor(ConcurrencyTestBase):
             time.sleep(0.5)
 
             spans = exporter.get_finished_spans()
-            self.assertEqual(len(spans), 200)
+            self.assertEqual(len(spans), 100)
             exporter.clear()
             with tracer.start_as_current_span("child"):
                 with tracer.start_as_current_span("inner"):
