@@ -203,6 +203,8 @@ class BatchSpanProcessor(SpanProcessor):
             os.register_at_fork(
                 after_in_child=self._at_fork_reinit
             )  # pylint: disable=protected-access
+        self._pid = os.getpid()
+        self._lock = threading.Lock()
 
     def on_start(
         self, span: Span, parent_context: typing.Optional[Context] = None
@@ -215,6 +217,11 @@ class BatchSpanProcessor(SpanProcessor):
             return
         if not span.context.trace_flags.sampled:
             return
+
+        if self._pid != os.getpid():
+            with self._lock:
+                self._at_fork_reinit()
+
         if len(self.queue) == self.max_queue_size:
             if not self._spans_dropped:
                 logger.warning("Queue is full, likely spans will be dropped.")
@@ -236,6 +243,7 @@ class BatchSpanProcessor(SpanProcessor):
             name="OtelBatchSpanProcessor", target=self.worker, daemon=True
         )
         self.worker_thread.start()
+        self._pid = os.getpid()
 
     def worker(self):
         timeout = self.schedule_delay_millis / 1e3
