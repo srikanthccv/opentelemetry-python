@@ -16,7 +16,6 @@
 import logging
 import multiprocessing
 import os
-import sys
 import time
 import unittest
 from concurrent.futures import ThreadPoolExecutor
