@@ -36,8 +36,8 @@ from opentelemetry.sdk.environment_variables import (
     OTEL_BSP_SCHEDULE_DELAY,
 )
 from opentelemetry.sdk.trace import ReadableSpan, Span, SpanProcessor
-from opentelemetry.util._time import _time_ns
 from opentelemetry.util._once import Once
+from opentelemetry.util._time import _time_ns
 
 logger = logging.getLogger(__name__)
 
