@@ -122,6 +122,7 @@ class _FlushRequest:
 
 _BSP_RESET_ONCE = Once()
 
+
 class BatchSpanProcessor(SpanProcessor):
     """Batch span processor implementation.
 
