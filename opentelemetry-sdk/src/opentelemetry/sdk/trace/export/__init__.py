@@ -220,8 +220,8 @@ class BatchSpanProcessor(SpanProcessor):
             return
         if not span.context.trace_flags.sampled:
             return
-        if self._pid != os.getpid():
-            _BSP_RESET_ONCE.do_once(self._at_fork_reinit)
+        # if self._pid != os.getpid():
+        #     _BSP_RESET_ONCE.do_once(self._at_fork_reinit)
 
         if len(self.queue) == self.max_queue_size:
             if not self._spans_dropped:

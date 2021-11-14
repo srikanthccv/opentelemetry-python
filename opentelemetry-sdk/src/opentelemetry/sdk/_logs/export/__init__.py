@@ -291,8 +291,8 @@ class BatchLogProcessor(LogProcessor):
         """
         if self._shutdown:
             return
-        if self._pid != os.getpid():
-            _BSP_RESET_ONCE.do_once(self._at_fork_reinit)
+        # if self._pid != os.getpid():
+        #     _BSP_RESET_ONCE.do_once(self._at_fork_reinit)
 
         self._queue.appendleft(log_data)
         if len(self._queue) >= self._max_export_batch_size:
