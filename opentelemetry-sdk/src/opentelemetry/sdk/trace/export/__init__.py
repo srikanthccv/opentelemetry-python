@@ -37,6 +37,7 @@ from opentelemetry.sdk.environment_variables import (
 )
 from opentelemetry.sdk.trace import ReadableSpan, Span, SpanProcessor
 from opentelemetry.util._time import _time_ns
+from opentelemetry.util._once import Once
 
 logger = logging.getLogger(__name__)
 
@@ -118,6 +119,8 @@ class _FlushRequest:
         self.event = threading.Event()
         self.num_spans = 0
 
+
+_BSP_RESET_ONCE = Once()
 
 class BatchSpanProcessor(SpanProcessor):
     """Batch span processor implementation.
@@ -203,6 +206,7 @@ class BatchSpanProcessor(SpanProcessor):
             os.register_at_fork(
                 after_in_child=self._at_fork_reinit
             )  # pylint: disable=protected-access
+        self._pid = os.getpid()
 
     def on_start(
         self, span: Span, parent_context: typing.Optional[Context] = None
@@ -215,6 +219,9 @@ class BatchSpanProcessor(SpanProcessor):
             return
         if not span.context.trace_flags.sampled:
             return
+        if self._pid != os.getpid():
+            _BSP_RESET_ONCE.do_once(self._at_fork_reinit)
+
         if len(self.queue) == self.max_queue_size:
             if not self._spans_dropped:
                 logger.warning("Queue is full, likely spans will be dropped.")
@@ -236,6 +243,7 @@ class BatchSpanProcessor(SpanProcessor):
             name="OtelBatchSpanProcessor", target=self.worker, daemon=True
         )
         self.worker_thread.start()
+        self._pid = os.getpid()
 
     def worker(self):
         timeout = self.schedule_delay_millis / 1e3
