@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1637239767769,
+  "lastUpdate": 1637239781306,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -22022,6 +22022,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008547497496081142",
             "extra": "mean: 200.59569649964416 usec\nrounds: 7028"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1f85268a6f00de4a771e0aaa8663ca6fbc07c575",
+          "message": "Adds Aggregation and instruments as part of Metrics SDK (#2234)\n\n* Adds metrics API (#1887)\r\n\r\n* Adds metric prototype\r\n\r\nFixes #1835\r\n\r\n* Fix docs\r\n\r\n* Add API metrics doc\r\n\r\n* Add missing docs\r\n\r\n* Add files\r\n\r\n* Adding docs\r\n\r\n* Refactor to _initialize\r\n\r\n* Refactor initialize\r\n\r\n* Add more documentation\r\n\r\n* Add exporter test\r\n\r\n* Add process\r\n\r\n* Fix tests\r\n\r\n* Try to add aggregator_class argument\r\n\r\nTests are failing here\r\n\r\n* Fix instrument parent classes\r\n\r\n* Test default aggregator\r\n\r\n* WIP\r\n\r\n* Add prototype test\r\n\r\n* Tests passing again\r\n\r\n* Use right counters\r\n\r\n* All tests passing\r\n\r\n* Rearrange instrument storage\r\n\r\n* Fix tests\r\n\r\n* Add HTTP server test\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* Add prototype\r\n\r\n* WIP\r\n\r\n* Fail the test\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* Add views\r\n\r\n* Discard instruments via views\r\n\r\n* Fix tests\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* Fix lint\r\n\r\n* WIP\r\n\r\n* Fix test\r\n\r\n* Fix lint\r\n\r\n* Fix method\r\n\r\n* Fix lint\r\n\r\n* Mypy workaround\r\n\r\n* Skip if 3.6\r\n\r\n* Fix lint\r\n\r\n* Add reason\r\n\r\n* Fix 3.6\r\n\r\n* Fix run\r\n\r\n* Fix lint\r\n\r\n* Remove SDK metrics\r\n\r\n* Remove SDK docs\r\n\r\n* Remove metrics\r\n\r\n* Remove assertnotraises mixin\r\n\r\n* Revert sdk docs conf\r\n\r\n* Remove SDK env var changes\r\n\r\n* Fix unit checking\r\n\r\n* Define positional-only arguments\r\n\r\n* Add Metrics plans\r\n\r\n* Add API tests\r\n\r\n* WIP\r\n\r\n* WIP test\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* Set provider test passing\r\n\r\n* Use a fixture\r\n\r\n* Add test for get_provider\r\n\r\n* Rename tests\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* WIP\r\n\r\n* Remove non specific requirement\r\n\r\n* Add meter requirements\r\n\r\n* Put all meter provider tests in one file\r\n\r\n* Add meter tests\r\n\r\n* Make attributes be passed as a dictionary\r\n\r\n* Make some interfaces private\r\n\r\n* Log an error instead\r\n\r\n* Remove ASCII flag\r\n\r\n* Add CHANGELOG entry\r\n\r\n* Add instrument tests\r\n\r\n* All tests passing\r\n\r\n* Add test\r\n\r\n* Add name tests\r\n\r\n* Add unit tests\r\n\r\n* Add description tests\r\n\r\n* Add counter tests\r\n\r\n* Add more tests\r\n\r\n* Add Histogram tests\r\n\r\n* Add observable gauge tests\r\n\r\n* Add updowncounter tests\r\n\r\n* Add observableupdowncounter tests\r\n\r\n* Fix lint\r\n\r\n* Fix docs\r\n\r\n* Fix lint\r\n\r\n* Ignore mypy\r\n\r\n* Remove useless pylint skip\r\n\r\n* Remove useless pylint skip\r\n\r\n* Remove useless pylint skip\r\n\r\n* Remove useless pylint skip\r\n\r\n* Remove useless pylint skip\r\n\r\n* Add locks to meter and meterprovider\r\n\r\n* Add lock to instruments\r\n\r\n* Fix fixmes\r\n\r\n* Fix lint\r\n\r\n* Add documentation placeholder\r\n\r\n* Remove blank line as requested.\r\n\r\n* Do not override Rlock\r\n\r\n* Remove unecessary super calls\r\n\r\n* Add missing super calls\r\n\r\n* Remove plan files\r\n\r\n* Add missing parameters\r\n\r\n* Rename observe to callback\r\n\r\n* Fix lint\r\n\r\n* Rename to secure_instrument_name\r\n\r\n* Remove locks\r\n\r\n* Fix lint\r\n\r\n* Remove args and kwargs\r\n\r\n* Remove implementation that gives meters access to meter provider\r\n\r\n* Allow creating async instruments with either a callback function or generator\r\n\r\n* add additional test with callback form of observable counter\r\n\r\n* add a test/example that reads measurements from proc stat\r\n\r\n* implement cpu time integration test with generator too\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\n\r\n* Make measurement a concrete class (#2153)\r\n\r\n* Make Measurement a concrete class\r\n\r\n* comments\r\n\r\n* update changelog\r\n\r\n* Return proxy instruments from ProxyMeter (#2169)\r\n\r\n* Merge main 4 (#2236)\r\n\r\n* Add MeterProvider and Meter to the SDK\r\n\r\nFixes #2200\r\n\r\n* Add FIXMEs\r\n\r\n* Fix docstring\r\n\r\n* Add FIXME\r\n\r\n* Fix meter return\r\n\r\n* Log an error if a force flush fails\r\n\r\n* Add FIXME\r\n\r\n* Fix lint\r\n\r\n* Remove SDK API module\r\n\r\n* Unregister\r\n\r\n* Fix API names\r\n\r\n* Return _DefaultMeter\r\n\r\n* Remove properties\r\n\r\n* Pass MeterProvider as a parameter to __init__\r\n\r\n* Add FIXMEs\r\n\r\n* Add FIXMEs\r\n\r\n* Fix lint\r\n\r\n* Add Aggregation to the metrics SDK\r\n\r\nFixes #2229\r\n\r\n* lint fix wip\r\n\r\n* Fix lint\r\n\r\n* Add proto to setup.cfg\r\n\r\n* Add timestamp for last value\r\n\r\n* Rename modules to be private\r\n\r\n* Fix paths\r\n\r\n* Set value in concrete classes init\r\n\r\n* Fix test\r\n\r\n* Fix lint\r\n\r\n* Remove temporalities\r\n\r\n* Use frozenset as key\r\n\r\n* Test instruments\r\n\r\n* Handle min, max and sum in explicit bucket histogram aggregator\r\n\r\n* Add test for negative values\r\n\r\n* Remove collect method from aggregations\r\n\r\n* Add make_point_and_reset\r\n\r\n* Remove add implementation\r\n\r\n* Remove _Synchronous\r\n\r\n* Update opentelemetry-sdk/src/opentelemetry/sdk/_metrics/aggregation.py\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\n\r\n* Requested fixes\r\n\r\n* Remove NoneAggregation\r\n\r\n* Add changelog entry\r\n\r\n* Fix tests\r\n\r\n* Fix boundaries\r\n\r\n* More fixes\r\n\r\n* Update CHANGELOG.md\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
+          "timestamp": "2021-11-18T00:18:02-06:00",
+          "tree_id": "4de153b23e0ecb83610cad43205b8a68762b4dcf",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/1f85268a6f00de4a771e0aaa8663ca6fbc07c575"
+        },
+        "date": 1637239777184,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2664.6975671191535,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00010163602325519486",
+            "extra": "mean: 375.27710924475224 usec\nrounds: 1309"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 5966.275588714949,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007164123936240262",
+            "extra": "mean: 167.60875107604372 usec\nrounds: 8826"
           }
         ]
       }
