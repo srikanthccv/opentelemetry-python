@@ -275,9 +275,8 @@ class TestBatchLogProcessor(ConcurrencyTestBase):
         finished_logs = exporter.get_finished_logs()
         self.assertEqual(len(finished_logs), 2415)
 
-    # TODO: fix https://github.com/open-telemetry/opentelemetry-python/issues/2346
-    @unittest.skipIf(
-        is_pypy or not supports_register_at_fork,
+    @unittest.skipUnless(
+        hasattr(os, "fork") and sys.version_info >= (3, 7),
         "needs *nix and minor version 7 or later",
     )
     def test_batch_log_processor_fork(self):
@@ -313,6 +312,7 @@ class TestBatchLogProcessor(ConcurrencyTestBase):
             time.sleep(0.5)
 
             logs = exporter.get_finished_logs()
+            print("Received logs", len(logs))
             conn.send(len(logs) == 100)
             conn.close()
 
