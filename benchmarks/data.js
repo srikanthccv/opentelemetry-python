@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1644558005130,
+  "lastUpdate": 1644558061899,
   "repoUrl": "https://github.com/lonewolf3739/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -40326,6 +40326,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000047369455344382825",
             "extra": "mean: 5.11718589665082 usec\nrounds: 138889"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e0a4f318df4ba3a230ecd7121e0a59ac445da34d",
+          "message": "bugfix(auto-instrumentation): attach OTLPHandler to root logger (#2450)",
+          "timestamp": "2022-02-10T08:56:30-08:00",
+          "tree_id": "ebd1f252483aca4ad81da652df0fca8086367924",
+          "url": "https://github.com/lonewolf3739/opentelemetry-python/commit/e0a4f318df4ba3a230ecd7121e0a59ac445da34d"
+        },
+        "date": 1644558058328,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 183247.43109583878,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00006504920141277764",
+            "extra": "mean: 5.457102421681415 usec\nrounds: 163935"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 118018.41473350118,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00007353035446034248",
+            "extra": "mean: 8.473253960054556 usec\nrounds: 103093"
           }
         ]
       }
