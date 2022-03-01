@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1646130060489,
+  "lastUpdate": 1646130116434,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -31148,6 +31148,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00000525099519443715",
             "extra": "mean: 4.721297890247732 usec\nrounds: 71429"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chalin@users.noreply.github.com",
+            "name": "Patrice Chalin",
+            "username": "chalin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6f8e9d3d96c89655972ace66b40e551045549962",
+          "message": "[docs] Rework API docs (#2453)",
+          "timestamp": "2022-02-28T11:59:15-08:00",
+          "tree_id": "1f771012e6a581043514310925833511be1134cc",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/6f8e9d3d96c89655972ace66b40e551045549962"
+        },
+        "date": 1646130111670,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 88201.25077654964,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000766433027029493",
+            "extra": "mean: 11.337707699105252 usec\nrounds: 11300"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 200421.89544028262,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000228477430454201",
+            "extra": "mean: 4.9894748166272995 usec\nrounds: 61350"
           }
         ]
       }
