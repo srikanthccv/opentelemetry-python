@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1646130361686,
+  "lastUpdate": 1646130382857,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -23390,6 +23390,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006859359235678311",
             "extra": "mean: 131.1319711865638 usec\nrounds: 8850"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chalin@users.noreply.github.com",
+            "name": "Patrice Chalin",
+            "username": "chalin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6f8e9d3d96c89655972ace66b40e551045549962",
+          "message": "[docs] Rework API docs (#2453)",
+          "timestamp": "2022-02-28T11:59:15-08:00",
+          "tree_id": "1f771012e6a581043514310925833511be1134cc",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/6f8e9d3d96c89655972ace66b40e551045549962"
+        },
+        "date": 1646130378062,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3169.8329038512597,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000017652932383867853",
+            "extra": "mean: 315.47404242823893 usec\nrounds: 1367"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 5810.9005698173805,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009047512413791304",
+            "extra": "mean: 172.0903649933606 usec\nrounds: 7370"
           }
         ]
       }
