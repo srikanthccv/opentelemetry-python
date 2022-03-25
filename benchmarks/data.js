@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1648193644288,
+  "lastUpdate": 1648193668072,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -44664,6 +44664,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006758997108122617",
             "extra": "mean: 138.41232968497596 usec\nrounds: 8681"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "070285218b5444d31c308a464ec45e52829a1622",
+          "message": "Fix View doc string (#2551)",
+          "timestamp": "2022-03-24T16:59:24-06:00",
+          "tree_id": "6d3ad48955b6cf70f0c6e10b6c02cc7ae2e343c6",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/070285218b5444d31c308a464ec45e52829a1622"
+        },
+        "date": 1648193664639,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3785.5904806123845,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006705415642756901",
+            "extra": "mean: 264.15958226898135 usec\nrounds: 1410"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7832.232193673691,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007218133705022826",
+            "extra": "mean: 127.67752222766423 usec\nrounds: 8098"
           }
         ]
       }
