@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1648193830995,
+  "lastUpdate": 1648193905606,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -14872,6 +14872,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008342959935161431",
             "extra": "mean: 217.78017066332973 usec\nrounds: 7588"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "070285218b5444d31c308a464ec45e52829a1622",
+          "message": "Fix View doc string (#2551)",
+          "timestamp": "2022-03-24T16:59:24-06:00",
+          "tree_id": "6d3ad48955b6cf70f0c6e10b6c02cc7ae2e343c6",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/070285218b5444d31c308a464ec45e52829a1622"
+        },
+        "date": 1648193902079,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2520.676800835041,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00020308489829655877",
+            "extra": "mean: 396.7188493458279 usec\nrounds: 1301"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4340.476718987573,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000995203086119555",
+            "extra": "mean: 230.38943985702394 usec\nrounds: 6443"
           }
         ]
       }
