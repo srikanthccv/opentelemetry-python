@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1648357995866,
+  "lastUpdate": 1648358070895,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -35484,6 +35484,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 2.7189312741824205e-7",
             "extra": "mean: 3.69265570315944 usec\nrounds: 64517"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "64a25a0addcc873949b6e7277edec0d92f5fd842",
+          "message": "Drop the usage of name field (#2565)\n\n* Drop the usage of name field\r\n\r\n* Add CHANGELOG entry\r\n\r\n* Update CHANGELOG.md\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2022-03-25T14:12:27-06:00",
+          "tree_id": "715250cda798427dd913b951086f94215d777ede",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/64a25a0addcc873949b6e7277edec0d92f5fd842"
+        },
+        "date": 1648358065404,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 99092.07364812093,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000953173016158512",
+            "extra": "mean: 10.091624518334651 usec\nrounds: 12195"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 187807.54908506488,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007204103289841933",
+            "extra": "mean: 5.324599596084733 usec\nrounds: 53476"
           }
         ]
       }
