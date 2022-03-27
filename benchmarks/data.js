@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1648357767264,
+  "lastUpdate": 1648357791071,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -39140,6 +39140,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000055560222309705196",
             "extra": "mean: 74.51190139916844 usec\nrounds: 4645"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "64a25a0addcc873949b6e7277edec0d92f5fd842",
+          "message": "Drop the usage of name field (#2565)\n\n* Drop the usage of name field\r\n\r\n* Add CHANGELOG entry\r\n\r\n* Update CHANGELOG.md\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2022-03-25T14:12:27-06:00",
+          "tree_id": "715250cda798427dd913b951086f94215d777ede",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/64a25a0addcc873949b6e7277edec0d92f5fd842"
+        },
+        "date": 1648357787116,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20640.85441023139,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000055782856358344605",
+            "extra": "mean: 48.4476068734981 usec\nrounds: 4248"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13812.432424226743,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000068576154197312295",
+            "extra": "mean: 72.39854424525683 usec\nrounds: 5187"
           }
         ]
       }
