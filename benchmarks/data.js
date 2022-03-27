@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1648358259804,
+  "lastUpdate": 1648358292943,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -23998,6 +23998,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006481971028588433",
             "extra": "mean: 128.2497172078289 usec\nrounds: 9141"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "64a25a0addcc873949b6e7277edec0d92f5fd842",
+          "message": "Drop the usage of name field (#2565)\n\n* Drop the usage of name field\r\n\r\n* Add CHANGELOG entry\r\n\r\n* Update CHANGELOG.md\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2022-03-25T14:12:27-06:00",
+          "tree_id": "715250cda798427dd913b951086f94215d777ede",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/64a25a0addcc873949b6e7277edec0d92f5fd842"
+        },
+        "date": 1648358288275,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2675.317583171718,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005440260210252706",
+            "extra": "mean: 373.78739865883574 usec\nrounds: 1342"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 6147.250613835501,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007253382484775547",
+            "extra": "mean: 162.6743503427888 usec\nrounds: 8897"
           }
         ]
       }
