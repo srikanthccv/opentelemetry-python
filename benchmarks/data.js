@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1648856621705,
+  "lastUpdate": 1648856664808,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -43974,6 +43974,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00003215307172005228",
             "extra": "mean: 9.370858289972404 usec\nrounds: 200000"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dj@gregor.com",
+            "name": "DJ Gregor",
+            "username": "deejgregor"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e280a8aa8524b1a74270d4be553360bba07a29c8",
+          "message": " Make sure trace flags are parsed properly when extracting traceparent and expand tests (#2577)",
+          "timestamp": "2022-04-01T21:57:25+05:30",
+          "tree_id": "2e71a341d92d0138238692c3389504edd63c3933",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/e280a8aa8524b1a74270d4be553360bba07a29c8"
+        },
+        "date": 1648856660954,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 274927.1258670477,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000043481997232288947",
+            "extra": "mean: 3.6373275166874257 usec\nrounds: 185186"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 181909.77515553625,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005443472957191122",
+            "extra": "mean: 5.497230696618592 usec\nrounds: 117648"
           }
         ]
       }
