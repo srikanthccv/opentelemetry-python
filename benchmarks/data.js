@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1648856465519,
+  "lastUpdate": 1648856493660,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -35788,6 +35788,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000007204103289841933",
             "extra": "mean: 5.324599596084733 usec\nrounds: 53476"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dj@gregor.com",
+            "name": "DJ Gregor",
+            "username": "deejgregor"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e280a8aa8524b1a74270d4be553360bba07a29c8",
+          "message": " Make sure trace flags are parsed properly when extracting traceparent and expand tests (#2577)",
+          "timestamp": "2022-04-01T21:57:25+05:30",
+          "tree_id": "2e71a341d92d0138238692c3389504edd63c3933",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/e280a8aa8524b1a74270d4be553360bba07a29c8"
+        },
+        "date": 1648856488550,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 102373.6798277202,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012426969895508733",
+            "extra": "mean: 9.768135732571618 usec\nrounds: 9364"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 187816.68668519138,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007237396876248272",
+            "extra": "mean: 5.324340545290037 usec\nrounds: 53476"
           }
         ]
       }
