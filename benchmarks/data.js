@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1649473698502,
+  "lastUpdate": 1649473707005,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -43402,6 +43402,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000003974528538078695",
             "extra": "mean: 55.33641533361297 usec\nrounds: 6313"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "f81381cf8aca64a707d934f20c6c27d40b949dce",
+          "message": "Fix dependencies for test utils (#2587)",
+          "timestamp": "2022-04-04T15:22:51-07:00",
+          "tree_id": "43d413deab31a8915a43ae19d280b46e5f509494",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/f81381cf8aca64a707d934f20c6c27d40b949dce"
+        },
+        "date": 1649473702493,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 28298.841884405287,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011921907621724",
+            "extra": "mean: 35.33713514089326 usec\nrounds: 4536"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20431.66340688035,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017720720043426933",
+            "extra": "mean: 48.9436410577932 usec\nrounds: 7263"
           }
         ]
       }
