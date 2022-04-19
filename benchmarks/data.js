@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1650399324058,
+  "lastUpdate": 1650399328402,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -46220,6 +46220,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 2.448658124903813e-7",
             "extra": "mean: 4.052673462219128 usec\nrounds: 79366"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alex@boten.ca",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "782ac3ef0d0a15fa30c76e152ea281657f5caa12",
+          "message": "update OTLP to v0.16.0 (#2619)\n\n* update OTLP to v0.16.0\r\n\r\nBumping OTLP to 0.16.0. This only removes the name field in the log data model.\r\n\r\n* update changelog\r\n\r\n* update readme",
+          "timestamp": "2022-04-19T12:50:27-06:00",
+          "tree_id": "b882601039da87871f9a01e5d5679fd562b90df4",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/782ac3ef0d0a15fa30c76e152ea281657f5caa12"
+        },
+        "date": 1650399323131,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 134233.1179005181,
+            "unit": "iter/sec",
+            "range": "stddev: 3.387859447911287e-7",
+            "extra": "mean: 7.44972638377597 usec\nrounds: 12788"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 239958.4086534685,
+            "unit": "iter/sec",
+            "range": "stddev: 2.3718539970892834e-7",
+            "extra": "mean: 4.167388863809859 usec\nrounds: 70922"
           }
         ]
       }
