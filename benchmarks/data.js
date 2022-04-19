@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1649473947224,
+  "lastUpdate": 1650399324058,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -45382,6 +45382,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000011935863065574967",
             "extra": "mean: 46.36551795017651 usec\nrounds: 7103"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alex@boten.ca",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "782ac3ef0d0a15fa30c76e152ea281657f5caa12",
+          "message": "update OTLP to v0.16.0 (#2619)\n\n* update OTLP to v0.16.0\r\n\r\nBumping OTLP to 0.16.0. This only removes the name field in the log data model.\r\n\r\n* update changelog\r\n\r\n* update readme",
+          "timestamp": "2022-04-19T12:50:27-06:00",
+          "tree_id": "b882601039da87871f9a01e5d5679fd562b90df4",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/782ac3ef0d0a15fa30c76e152ea281657f5caa12"
+        },
+        "date": 1650399317930,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 19823.302432620127,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000041100729168771136",
+            "extra": "mean: 50.445681459939564 usec\nrounds: 4439"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14316.547649280428,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005115025055961423",
+            "extra": "mean: 69.8492419050665 usec\nrounds: 7937"
           }
         ]
       }
