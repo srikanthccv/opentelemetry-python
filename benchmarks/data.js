@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1650399764370,
+  "lastUpdate": 1650399885534,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -21298,6 +21298,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009746613793796148",
             "extra": "mean: 187.12124105384544 usec\nrounds: 8272"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alex@boten.ca",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "782ac3ef0d0a15fa30c76e152ea281657f5caa12",
+          "message": "update OTLP to v0.16.0 (#2619)\n\n* update OTLP to v0.16.0\r\n\r\nBumping OTLP to 0.16.0. This only removes the name field in the log data model.\r\n\r\n* update changelog\r\n\r\n* update readme",
+          "timestamp": "2022-04-19T12:50:27-06:00",
+          "tree_id": "b882601039da87871f9a01e5d5679fd562b90df4",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/782ac3ef0d0a15fa30c76e152ea281657f5caa12"
+        },
+        "date": 1650399880079,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3692.6793971357583,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007257864169803076",
+            "extra": "mean: 270.80607127053975 usec\nrounds: 1361"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7453.483121405633,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007537404894090271",
+            "extra": "mean: 134.16546112891882 usec\nrounds: 9390"
           }
         ]
       }
