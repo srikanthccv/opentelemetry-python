@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1651878640791,
+  "lastUpdate": 1651878676171,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -47970,6 +47970,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006815875200888069",
             "extra": "mean: 124.115563879602 usec\nrounds: 8555"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "07a5b64a3a9dd1025e65b4bdcfc0a6377e34accc",
+          "message": "Inform the user of conflicting view configuration (#2608)\n\n* Inform the user if there is a view configuration conflict\r\n\r\nFixes #2556\r\n\r\n* Add test case\r\n\r\n* Fix lint\r\n\r\n* Add test case for another kind of collision\r\n\r\n* Fix test cases\r\n\r\n* Fix lint\r\n\r\n* Fix tests\r\n\r\n* Add equal comparison between views\r\n\r\n* Rename __eq__ to conflicts\r\n\r\n* Refactor deep code into a function\r\n\r\n* Refactor conflict handling methods\r\n\r\n* Update opentelemetry-sdk/src/opentelemetry/sdk/_metrics/_internal/_view_instrument_match.py\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\n\r\n* Update opentelemetry-sdk/src/opentelemetry/sdk/_metrics/_internal/_view_instrument_match.py\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\n\r\n* Use continue\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2022-05-06T20:00:39Z",
+          "tree_id": "965f62cee6fc6925e6f04bff61732852fd212a63",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/07a5b64a3a9dd1025e65b4bdcfc0a6377e34accc"
+        },
+        "date": 1651878670932,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2480.329075103162,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000686133233863018",
+            "extra": "mean: 403.1723088834122 usec\nrounds: 1227"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 5850.607774206372,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007621548448880151",
+            "extra": "mean: 170.9224132933179 usec\nrounds: 8621"
           }
         ]
       }
