@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1652503156148,
+  "lastUpdate": 1652503241834,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -37308,6 +37308,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000013794422477612392",
             "extra": "mean: 4.334486880058447 usec\nrounds: 60976"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "741389585b5d6d1af808a8939c5348113158f969",
+          "message": "Make metrics public (#2684)\n\n* Make metrics public\n\nFixes #2682\n\n* Make environment variable public\n\n* Make environment variable public\n\n* Fix example\n\n* Make exporter public\n\n* Fix environment variable import path\n\n* Fix exporter\n\n* Fix lint\n\n* Fix import order\n\n* Add tag\n\n* Fix import path",
+          "timestamp": "2022-05-13T20:09:23-06:00",
+          "tree_id": "26871e4352c1ff17ecb31ce0f368916b2cd37644",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/741389585b5d6d1af808a8939c5348113158f969"
+        },
+        "date": 1652503237615,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 96291.44404084259,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006581451892916385",
+            "extra": "mean: 10.385138679360171 usec\nrounds: 11934"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 173512.7581699961,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000011221666746463882",
+            "extra": "mean: 5.763264964183598 usec\nrounds: 56819"
           }
         ]
       }
