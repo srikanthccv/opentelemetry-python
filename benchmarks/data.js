@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1653131621001,
+  "lastUpdate": 1653131623331,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -47736,6 +47736,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00004858794067105083",
             "extra": "mean: 5.372621383342661 usec\nrounds: 120482"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54e2fef02acc8c7bc1ad8afef42a868aad124f34",
+          "message": "Add meter provider and in memory reader to TestBase (#2707)",
+          "timestamp": "2022-05-21T01:51:56+05:30",
+          "tree_id": "9b3acefa01f9bf97d58a5085a85fa955264aecac",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/54e2fef02acc8c7bc1ad8afef42a868aad124f34"
+        },
+        "date": 1653131616717,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 243116.4874303166,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001538406286235879",
+            "extra": "mean: 4.1132545578038 usec\nrounds: 192308"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 163246.2367239041,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001452957165097128",
+            "extra": "mean: 6.125715483973361 usec\nrounds: 123457"
           }
         ]
       }
