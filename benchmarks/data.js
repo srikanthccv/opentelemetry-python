@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1653131172627,
+  "lastUpdate": 1653131231557,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -28180,6 +28180,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000027190209382583434",
             "extra": "mean: 6.861812144597095 usec\nrounds: 42554"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54e2fef02acc8c7bc1ad8afef42a868aad124f34",
+          "message": "Add meter provider and in memory reader to TestBase (#2707)",
+          "timestamp": "2022-05-21T01:51:56+05:30",
+          "tree_id": "9b3acefa01f9bf97d58a5085a85fa955264aecac",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/54e2fef02acc8c7bc1ad8afef42a868aad124f34"
+        },
+        "date": 1653131227268,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 95111.02929132304,
+            "unit": "iter/sec",
+            "range": "stddev: 4.398899677363675e-7",
+            "extra": "mean: 10.514027736331414 usec\nrounds: 12078"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 196516.17755235624,
+            "unit": "iter/sec",
+            "range": "stddev: 2.957542257106555e-7",
+            "extra": "mean: 5.088639584054488 usec\nrounds: 62894"
           }
         ]
       }
