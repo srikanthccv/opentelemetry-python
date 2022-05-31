@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1653980689316,
+  "lastUpdate": 1653980732214,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -18598,6 +18598,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007018752102405782",
             "extra": "mean: 162.7421511295262 usec\nrounds: 6994"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alan.pinkert@gmail.com",
+            "name": "Alan Isaac",
+            "username": "alanisaac"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cad776a2031c84fb3c3a1af90ee2a939f3394b9a",
+          "message": "Added generic to textmap getter and setter (#2657)\n\n* added generic to textmap getter and setter\r\n\r\n* added CHANGELOG entry\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
+          "timestamp": "2022-05-27T11:11:13+05:30",
+          "tree_id": "a162ca8a7f14a3a266421343fd66bafa9383a449",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/cad776a2031c84fb3c3a1af90ee2a939f3394b9a"
+        },
+        "date": 1653980727577,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3197.5070084136,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006123042880966695",
+            "extra": "mean: 312.7436460244497 usec\nrounds: 1308"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 6295.805065247742,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007465193278998711",
+            "extra": "mean: 158.83592163930024 usec\nrounds: 7491"
           }
         ]
       }
