@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1653981166264,
+  "lastUpdate": 1653981178193,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -48268,6 +48268,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00001452957165097128",
             "extra": "mean: 6.125715483973361 usec\nrounds: 123457"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alan.pinkert@gmail.com",
+            "name": "Alan Isaac",
+            "username": "alanisaac"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cad776a2031c84fb3c3a1af90ee2a939f3394b9a",
+          "message": "Added generic to textmap getter and setter (#2657)\n\n* added generic to textmap getter and setter\r\n\r\n* added CHANGELOG entry\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
+          "timestamp": "2022-05-27T11:11:13+05:30",
+          "tree_id": "a162ca8a7f14a3a266421343fd66bafa9383a449",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/cad776a2031c84fb3c3a1af90ee2a939f3394b9a"
+        },
+        "date": 1653981170436,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 244910.2340352112,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00002139661194280536",
+            "extra": "mean: 4.083128677490213 usec\nrounds: 36098"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 162834.89077494893,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000014033013510921952",
+            "extra": "mean: 6.1411899823243745 usec\nrounds: 136968"
           }
         ]
       }
