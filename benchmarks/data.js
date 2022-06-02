@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1653981240120,
+  "lastUpdate": 1654166438396,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -49372,6 +49372,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000016719677533191803",
             "extra": "mean: 47.26075421183055 usec\nrounds: 7657"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "1dd18556dfe1089d04c417adeddfdd3b18e6d67e",
+          "message": "fix: `frozenset` object has no attribute `items` (#2727)",
+          "timestamp": "2022-06-01T11:28:01-07:00",
+          "tree_id": "c8bea98c2efd01c3585bdd82db8bcc561d7b76cc",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/1dd18556dfe1089d04c417adeddfdd3b18e6d67e"
+        },
+        "date": 1654166433551,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 24553.82468610207,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000018256674904177818",
+            "extra": "mean: 40.726852650618575 usec\nrounds: 4961"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 17885.544467518306,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000021844781282427726",
+            "extra": "mean: 55.91107398581499 usec\nrounds: 7988"
           }
         ]
       }
