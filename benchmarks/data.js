@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1654166979297,
+  "lastUpdate": 1654167046043,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -41720,6 +41720,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000017515799173154808",
             "extra": "mean: 853.2006321640357 nsec\nrounds: 129871"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "1dd18556dfe1089d04c417adeddfdd3b18e6d67e",
+          "message": "fix: `frozenset` object has no attribute `items` (#2727)",
+          "timestamp": "2022-06-01T11:28:01-07:00",
+          "tree_id": "c8bea98c2efd01c3585bdd82db8bcc561d7b76cc",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/1dd18556dfe1089d04c417adeddfdd3b18e6d67e"
+        },
+        "date": 1654167040921,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 604729.5534905028,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000003210506221684644",
+            "extra": "mean: 1.6536317668419567 usec\nrounds: 66667"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 1011756.0673799041,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002221148547900355",
+            "extra": "mean: 988.3805318703972 nsec\nrounds: 113637"
           }
         ]
       }
