@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1654166733246,
+  "lastUpdate": 1654166750462,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -45870,6 +45870,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00013464293706575244",
             "extra": "mean: 77.82477377184786 usec\nrounds: 2524"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "1dd18556dfe1089d04c417adeddfdd3b18e6d67e",
+          "message": "fix: `frozenset` object has no attribute `items` (#2727)",
+          "timestamp": "2022-06-01T11:28:01-07:00",
+          "tree_id": "c8bea98c2efd01c3585bdd82db8bcc561d7b76cc",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/1dd18556dfe1089d04c417adeddfdd3b18e6d67e"
+        },
+        "date": 1654166746398,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 28806.773077083206,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010611542201830307",
+            "extra": "mean: 34.71405829886357 usec\nrounds: 4820"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20973.11813273883,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000021712305827169544",
+            "extra": "mean: 47.68008236405296 usec\nrounds: 6362"
           }
         ]
       }
