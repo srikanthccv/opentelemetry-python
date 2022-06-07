@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1654615270911,
+  "lastUpdate": 1654615317652,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -43358,6 +43358,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000016524083358074461",
             "extra": "mean: 68.3769851122026 usec\nrounds: 4769"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "928d333546a5ea792bc977a4fdb415e565627e7b",
+          "message": "Support logs SDK auto instrumentation enable/disable with env (#2728)",
+          "timestamp": "2022-06-07T20:02:00+05:30",
+          "tree_id": "f68ae873de3c22592a42145c505c26de2b9fc56f",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/928d333546a5ea792bc977a4fdb415e565627e7b"
+        },
+        "date": 1654615312645,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 19091.916416024927,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000037997547583414932",
+            "extra": "mean: 52.3781886642162 usec\nrounds: 3758"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13432.825292214684,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000065027510395551265",
+            "extra": "mean: 74.44450279417943 usec\nrounds: 5368"
           }
         ]
       }
