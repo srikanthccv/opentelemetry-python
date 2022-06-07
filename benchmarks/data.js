@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1654615748457,
+  "lastUpdate": 1654615818824,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -46364,6 +46364,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000021712305827169544",
             "extra": "mean: 47.68008236405296 usec\nrounds: 6362"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "928d333546a5ea792bc977a4fdb415e565627e7b",
+          "message": "Support logs SDK auto instrumentation enable/disable with env (#2728)",
+          "timestamp": "2022-06-07T20:02:00+05:30",
+          "tree_id": "f68ae873de3c22592a42145c505c26de2b9fc56f",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/928d333546a5ea792bc977a4fdb415e565627e7b"
+        },
+        "date": 1654615813464,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 25554.600435905406,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000029733255413960114",
+            "extra": "mean: 39.131897307811286 usec\nrounds: 4606"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 18206.425689418844,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000030006456521466215",
+            "extra": "mean: 54.92566289830173 usec\nrounds: 5838"
           }
         ]
       }
