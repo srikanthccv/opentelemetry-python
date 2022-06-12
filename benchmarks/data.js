@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1655050710655,
+  "lastUpdate": 1655050732248,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -44080,6 +44080,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00004809416091425078",
             "extra": "mean: 102.67379145961785 usec\nrounds: 6440"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "6e282d27e5a7fa337322dda154fe6eecf64380f0",
+          "message": " Allow `set_status` to accept the StatusCode and optional description  (#2735)",
+          "timestamp": "2022-06-12T00:41:46+05:30",
+          "tree_id": "bca7aa2a7c2f2a7908423931d07b1a18f0d5ac43",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/6e282d27e5a7fa337322dda154fe6eecf64380f0"
+        },
+        "date": 1655050725049,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 15638.104551022543,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000034385067495492516",
+            "extra": "mean: 63.94636873908175 usec\nrounds: 3973"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 9616.14379006562,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00007054087697427247",
+            "extra": "mean: 103.99178941491016 usec\nrounds: 5385"
           }
         ]
       }
