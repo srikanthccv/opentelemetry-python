@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1655394556951,
+  "lastUpdate": 1655394590233,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -44460,6 +44460,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00007054087697427247",
             "extra": "mean: 103.99178941491016 usec\nrounds: 5385"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bksaville@gmail.com",
+            "name": "Brian Saville",
+            "username": "bluesliverx"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "b03b5ca6912e355ef81ef81ed340a3e8d014305e",
+          "message": "Fix #2348, add handling for non recording span in jaeger propagator (#2762)\n\n* Fix #2348, add handling for non recording span in jaeger exporter\r\n\r\n* Fix pylint errors\r\n\r\n* Changes for black",
+          "timestamp": "2022-06-15T23:15:56+01:00",
+          "tree_id": "0a408fae5fa92f55d550b639b399b0ad7a9b7cf2",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/b03b5ca6912e355ef81ef81ed340a3e8d014305e"
+        },
+        "date": 1655394586662,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 24174.205266057834,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001285418562765809",
+            "extra": "mean: 41.36640642346433 usec\nrounds: 4141"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 16668.765651704973,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000003467260075522237",
+            "extra": "mean: 59.99244460538171 usec\nrounds: 4829"
           }
         ]
       }
