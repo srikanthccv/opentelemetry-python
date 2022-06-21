@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1655831468545,
+  "lastUpdate": 1655831475007,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -49786,6 +49786,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001131107359628401",
             "extra": "mean: 49.77661236323898 usec\nrounds: 6212"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "miro@hroncok.cz",
+            "name": "Miro Hrončok",
+            "username": "hroncok"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aa367302989978a1ae04badee7e3948502b96616",
+          "message": "Python 3.11: Enhanced error locations in tracebacks (#2771)\n\n* Python 3.11: Enhanced error locations in tracebacks\r\n\r\nExpect ^^^^^^^^^ in tracebacks when testing them\r\n\r\n* Update opentelemetry-sdk/tests/trace/test_trace.py\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
+          "timestamp": "2022-06-21T12:45:59+02:00",
+          "tree_id": "e65164653f6288e7abf5f28ed02c101d11db6d5c",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/aa367302989978a1ae04badee7e3948502b96616"
+        },
+        "date": 1655831470601,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 27790.745432147804,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014878306883580052",
+            "extra": "mean: 35.983201761951264 usec\nrounds: 4654"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20364.96078936358,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014050441127945455",
+            "extra": "mean: 49.10394919700952 usec\nrounds: 6850"
           }
         ]
       }
