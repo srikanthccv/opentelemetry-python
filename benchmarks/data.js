@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1655831041339,
+  "lastUpdate": 1655831089558,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -32780,6 +32780,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 4.186439430936005e-7",
             "extra": "mean: 6.960926172744588 usec\nrounds: 57472"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "miro@hroncok.cz",
+            "name": "Miro Hrončok",
+            "username": "hroncok"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aa367302989978a1ae04badee7e3948502b96616",
+          "message": "Python 3.11: Enhanced error locations in tracebacks (#2771)\n\n* Python 3.11: Enhanced error locations in tracebacks\r\n\r\nExpect ^^^^^^^^^ in tracebacks when testing them\r\n\r\n* Update opentelemetry-sdk/tests/trace/test_trace.py\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
+          "timestamp": "2022-06-21T12:45:59+02:00",
+          "tree_id": "e65164653f6288e7abf5f28ed02c101d11db6d5c",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/aa367302989978a1ae04badee7e3948502b96616"
+        },
+        "date": 1655831084611,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 77338.09665758727,
+            "unit": "iter/sec",
+            "range": "stddev: 5.335069605271852e-7",
+            "extra": "mean: 12.930238048493464 usec\nrounds: 12195"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 140801.14926443953,
+            "unit": "iter/sec",
+            "range": "stddev: 3.697481820538394e-7",
+            "extra": "mean: 7.102214756229678 usec\nrounds: 54052"
           }
         ]
       }
