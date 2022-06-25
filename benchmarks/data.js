@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1656128729870,
+  "lastUpdate": 1656128743380,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -15518,6 +15518,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007570683476343257",
             "extra": "mean: 193.1618185162613 usec\nrounds: 6524"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "25771ecdac685a5bf7ada1da21092d2061dbfc02",
+          "message": "Use always empty for None schema url value (#2764)\n\n* Use always None for empty schema url value\r\n\r\nFixes #2750\r\n\r\n* Revert \"Use always None for empty schema url value\"\r\n\r\nThis reverts commit 8ef29dbd665c5c3ed812266452cb510081f50f16.\r\n\r\n* Use empty string as default value for schema_url",
+          "timestamp": "2022-06-24T17:46:00+02:00",
+          "tree_id": "f92839256283e2ccbc7218f30b964589989dd280",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/25771ecdac685a5bf7ada1da21092d2061dbfc02"
+        },
+        "date": 1656128738395,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3207.6389238309803,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007018068340097993",
+            "extra": "mean: 311.75578790073723 usec\nrounds: 1339"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 5829.862616101732,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006890029014548856",
+            "extra": "mean: 171.53062873867043 usec\nrounds: 6486"
           }
         ]
       }
