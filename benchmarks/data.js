@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1655831751533,
+  "lastUpdate": 1656128304600,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -52792,6 +52792,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000026531789301494214",
             "extra": "mean: 68.21186322362982 usec\nrounds: 6390"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "25771ecdac685a5bf7ada1da21092d2061dbfc02",
+          "message": "Use always empty for None schema url value (#2764)\n\n* Use always None for empty schema url value\r\n\r\nFixes #2750\r\n\r\n* Revert \"Use always None for empty schema url value\"\r\n\r\nThis reverts commit 8ef29dbd665c5c3ed812266452cb510081f50f16.\r\n\r\n* Use empty string as default value for schema_url",
+          "timestamp": "2022-06-24T17:46:00+02:00",
+          "tree_id": "f92839256283e2ccbc7218f30b964589989dd280",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/25771ecdac685a5bf7ada1da21092d2061dbfc02"
+        },
+        "date": 1656128298743,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 30764.682922028554,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001609661272747857",
+            "extra": "mean: 32.50480437371796 usec\nrounds: 6676"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 21647.009778460415,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012936630687347361",
+            "extra": "mean: 46.19575683820485 usec\nrounds: 8299"
           }
         ]
       }
