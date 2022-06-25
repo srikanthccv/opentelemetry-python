@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1656128304600,
+  "lastUpdate": 1656128336139,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -54124,6 +54124,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00000105945711575077",
             "extra": "mean: 4.404117851090966 usec\nrounds: 73525"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "25771ecdac685a5bf7ada1da21092d2061dbfc02",
+          "message": "Use always empty for None schema url value (#2764)\n\n* Use always None for empty schema url value\r\n\r\nFixes #2750\r\n\r\n* Revert \"Use always None for empty schema url value\"\r\n\r\nThis reverts commit 8ef29dbd665c5c3ed812266452cb510081f50f16.\r\n\r\n* Use empty string as default value for schema_url",
+          "timestamp": "2022-06-24T17:46:00+02:00",
+          "tree_id": "f92839256283e2ccbc7218f30b964589989dd280",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/25771ecdac685a5bf7ada1da21092d2061dbfc02"
+        },
+        "date": 1656128329147,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 183768.34349232545,
+            "unit": "iter/sec",
+            "range": "stddev: 3.0627252701644844e-7",
+            "extra": "mean: 5.441633640463011 usec\nrounds: 18228"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 341824.80238911393,
+            "unit": "iter/sec",
+            "range": "stddev: 2.305187509476146e-7",
+            "extra": "mean: 2.925475252265799 usec\nrounds: 86573"
           }
         ]
       }
