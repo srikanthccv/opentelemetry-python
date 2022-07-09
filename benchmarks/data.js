@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1657366047632,
+  "lastUpdate": 1657366089550,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -56178,6 +56178,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008216851854986654",
             "extra": "mean: 154.71166720040623 usec\nrounds: 7497"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fe26adaa07f88324c933a75f1a4dd199c9c8b2d7",
+          "message": "Fix warning message for OTLP gRPC exporter mixin (#2781)\n\n* Fix warning message for OTLP gRPC exporter mixin\r\n\r\nFixes #2780\r\n\r\n* Refactor export parameter type\r\n\r\n* Add changelog entry\r\n\r\n* Use fixed warning messages for traces and metrics\r\n\r\n* Use subclass-specific error messages\r\n\r\n* Fix test cases\r\n\r\n* Fix lint",
+          "timestamp": "2022-07-07T16:16:57+02:00",
+          "tree_id": "69a4622e8fac38622719520c6ae3eafebfd7f0cc",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/fe26adaa07f88324c933a75f1a4dd199c9c8b2d7"
+        },
+        "date": 1657366085113,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 4371.3693524454875,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006746982202401698",
+            "extra": "mean: 228.76126892379094 usec\nrounds: 1506"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7886.364853673993,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007999430265046495",
+            "extra": "mean: 126.80113316519126 usec\nrounds: 8711"
           }
         ]
       }
