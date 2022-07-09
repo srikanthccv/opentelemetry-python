@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1657366202602,
+  "lastUpdate": 1657366211833,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -49062,6 +49062,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000026532807739440094",
             "extra": "mean: 55.12531467099776 usec\nrounds: 6305"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fe26adaa07f88324c933a75f1a4dd199c9c8b2d7",
+          "message": "Fix warning message for OTLP gRPC exporter mixin (#2781)\n\n* Fix warning message for OTLP gRPC exporter mixin\r\n\r\nFixes #2780\r\n\r\n* Refactor export parameter type\r\n\r\n* Add changelog entry\r\n\r\n* Use fixed warning messages for traces and metrics\r\n\r\n* Use subclass-specific error messages\r\n\r\n* Fix test cases\r\n\r\n* Fix lint",
+          "timestamp": "2022-07-07T16:16:57+02:00",
+          "tree_id": "69a4622e8fac38622719520c6ae3eafebfd7f0cc",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/fe26adaa07f88324c933a75f1a4dd199c9c8b2d7"
+        },
+        "date": 1657366205925,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 30133.694568752842,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010059311546333864",
+            "extra": "mean: 33.18544288415768 usec\nrounds: 6338"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 21146.62745823369,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012389432495437394",
+            "extra": "mean: 47.28886447614786 usec\nrounds: 8065"
           }
         ]
       }
