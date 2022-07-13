@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1657366480201,
+  "lastUpdate": 1657748675372,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -53932,6 +53932,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000013696233253022394",
             "extra": "mean: 46.828715731012814 usec\nrounds: 6128"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d127b598b187de5be6a0e43c112bf954a79f57d3",
+          "message": "docs: add examples to show common view scenarios (#2811)",
+          "timestamp": "2022-07-14T01:52:57+05:30",
+          "tree_id": "70d9d3f9841a64bbdf0bf2186bdf1d52d3b241b3",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/d127b598b187de5be6a0e43c112bf954a79f57d3"
+        },
+        "date": 1657748671136,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 29792.887110872543,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014566359050485338",
+            "extra": "mean: 33.565058541609496 usec\nrounds: 5842"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 21504.456397099708,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012656842578760828",
+            "extra": "mean: 46.50198924046596 usec\nrounds: 7807"
           }
         ]
       }
