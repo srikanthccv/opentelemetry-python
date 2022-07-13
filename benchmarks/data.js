@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1657748888835,
+  "lastUpdate": 1657748915988,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -49556,6 +49556,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000012389432495437394",
             "extra": "mean: 47.28886447614786 usec\nrounds: 8065"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d127b598b187de5be6a0e43c112bf954a79f57d3",
+          "message": "docs: add examples to show common view scenarios (#2811)",
+          "timestamp": "2022-07-14T01:52:57+05:30",
+          "tree_id": "70d9d3f9841a64bbdf0bf2186bdf1d52d3b241b3",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/d127b598b187de5be6a0e43c112bf954a79f57d3"
+        },
+        "date": 1657748909341,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 25732.334710051244,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000017537786229986306",
+            "extra": "mean: 38.86161171412839 usec\nrounds: 4883"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 19968.315924749262,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004895173179729454",
+            "extra": "mean: 50.079335872314275 usec\nrounds: 8533"
           }
         ]
       }
