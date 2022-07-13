@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1657748735934,
+  "lastUpdate": 1657748756222,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -45980,6 +45980,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000014819564438399992",
             "extra": "mean: 68.61867298392816 usec\nrounds: 5171"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d127b598b187de5be6a0e43c112bf954a79f57d3",
+          "message": "docs: add examples to show common view scenarios (#2811)",
+          "timestamp": "2022-07-14T01:52:57+05:30",
+          "tree_id": "70d9d3f9841a64bbdf0bf2186bdf1d52d3b241b3",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/d127b598b187de5be6a0e43c112bf954a79f57d3"
+        },
+        "date": 1657748750333,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21237.201053915403,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011809956968121166",
+            "extra": "mean: 47.08718429802852 usec\nrounds: 5426"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14237.880006383872,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001652059258240695",
+            "extra": "mean: 70.23517543002383 usec\nrounds: 6219"
           }
         ]
       }
