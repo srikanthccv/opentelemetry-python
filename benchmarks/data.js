@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1657843400258,
+  "lastUpdate": 1657843454628,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -19358,6 +19358,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007975508270678875",
             "extra": "mean: 220.57757372185335 usec\nrounds: 6850"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "623a4762a167ed992294886724df79b710cfcd05",
+          "message": "Remove dead link (#2818)",
+          "timestamp": "2022-07-14T04:33:21+05:30",
+          "tree_id": "5082ab4c51ec6a84d346f1a54dd80b909b1b6f79",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/623a4762a167ed992294886724df79b710cfcd05"
+        },
+        "date": 1657843447681,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3210.0277773986218,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007118494807562648",
+            "extra": "mean: 311.52378401235865 usec\nrounds: 1301"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 6080.573377144621,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007862893967038012",
+            "extra": "mean: 164.45817490810222 usec\nrounds: 7078"
           }
         ]
       }
