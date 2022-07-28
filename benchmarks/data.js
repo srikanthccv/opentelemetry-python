@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1659003387762,
+  "lastUpdate": 1659003402539,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -46740,6 +46740,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000018366903101773577",
             "extra": "mean: 69.22569468126434 usec\nrounds: 5866"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tonycody@qq.com",
+            "name": "XS",
+            "username": "tonycody"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c9222bfc18ec91f041c2f0a9eac8560f61dcb338",
+          "message": "feat:: Added `--insecure` of CLI argument (#2696)",
+          "timestamp": "2022-07-26T14:09:19+05:30",
+          "tree_id": "f1b69be14a0cf81124fd64afa9175074f895eed2",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/c9222bfc18ec91f041c2f0a9eac8560f61dcb338"
+        },
+        "date": 1659003395195,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 15680.798895024347,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000013718143110065852",
+            "extra": "mean: 63.77226101135119 usec\nrounds: 3973"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 9747.066188718156,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00011551362606483297",
+            "extra": "mean: 102.59497377348893 usec\nrounds: 5872"
           }
         ]
       }
