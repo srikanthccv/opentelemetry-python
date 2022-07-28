@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1659003531076,
+  "lastUpdate": 1659003534696,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -37570,6 +37570,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00000548467666824539",
             "extra": "mean: 5.224980180318313 usec\nrounds: 58477"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tonycody@qq.com",
+            "name": "XS",
+            "username": "tonycody"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c9222bfc18ec91f041c2f0a9eac8560f61dcb338",
+          "message": "feat:: Added `--insecure` of CLI argument (#2696)",
+          "timestamp": "2022-07-26T14:09:19+05:30",
+          "tree_id": "f1b69be14a0cf81124fd64afa9175074f895eed2",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/c9222bfc18ec91f041c2f0a9eac8560f61dcb338"
+        },
+        "date": 1659003527076,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 101398.45091603775,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001330050303628797",
+            "extra": "mean: 9.862083601533941 usec\nrounds: 11806"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 210049.48744044697,
+            "unit": "iter/sec",
+            "range": "stddev: 7.028603075375952e-7",
+            "extra": "mean: 4.760782862103004 usec\nrounds: 64512"
           }
         ]
       }
