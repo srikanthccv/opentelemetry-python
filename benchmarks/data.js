@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1659003370144,
+  "lastUpdate": 1659003387762,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -58078,6 +58078,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000776214316070636",
             "extra": "mean: 168.32821455772734 usec\nrounds: 7611"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tonycody@qq.com",
+            "name": "XS",
+            "username": "tonycody"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c9222bfc18ec91f041c2f0a9eac8560f61dcb338",
+          "message": "feat:: Added `--insecure` of CLI argument (#2696)",
+          "timestamp": "2022-07-26T14:09:19+05:30",
+          "tree_id": "f1b69be14a0cf81124fd64afa9175074f895eed2",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/c9222bfc18ec91f041c2f0a9eac8560f61dcb338"
+        },
+        "date": 1659003382999,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 4085.462139186338,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005539543552066322",
+            "extra": "mean: 244.77035055798126 usec\nrounds: 1703"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7740.302068908947,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007100339432959636",
+            "extra": "mean: 129.1939243581688 usec\nrounds: 8765"
           }
         ]
       }
