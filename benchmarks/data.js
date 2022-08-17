@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1660703819181,
+  "lastUpdate": 1660703869680,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -54576,6 +54576,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00005228858027250578",
             "extra": "mean: 5.631595955730988 usec\nrounds: 117648"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ad3e23955273ab653f6140bd40d9d05c8a37e481",
+          "message": "Update PeriodicExportingMetricReader to never call export() concurrently (#2873)",
+          "timestamp": "2022-08-15T23:49:33+05:30",
+          "tree_id": "0f7b88c5e9c4c0646d9523a651ac52248028e3e4",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/ad3e23955273ab653f6140bd40d9d05c8a37e481"
+        },
+        "date": 1660703864714,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 279554.04007619905,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005403491140678371",
+            "extra": "mean: 3.57712590999374 usec\nrounds: 178572"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 194493.705725331,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007659195198128254",
+            "extra": "mean: 5.141554562244939 usec\nrounds: 113650"
           }
         ]
       }
