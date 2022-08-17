@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1660703869680,
+  "lastUpdate": 1660772479256,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -57620,6 +57620,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000006005439687207212",
             "extra": "mean: 4.074058962548754 usec\nrounds: 80000"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "galbashan1@gmail.com",
+            "name": "Gal Bashan",
+            "username": "galbash"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cd2b6a9d6857f3f9815c3ded29ad153fec74c816",
+          "message": "Adding Codespell to the CI (#2878)",
+          "timestamp": "2022-08-18T02:56:28+05:30",
+          "tree_id": "732fde47be31627040f61f322a6b2d1c9dadc0ac",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/cd2b6a9d6857f3f9815c3ded29ad153fec74c816"
+        },
+        "date": 1660772474104,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 130765.81104710634,
+            "unit": "iter/sec",
+            "range": "stddev: 4.6767791610530216e-7",
+            "extra": "mean: 7.64725880558922 usec\nrounds: 14451"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 242766.03408219595,
+            "unit": "iter/sec",
+            "range": "stddev: 2.7513936193765555e-7",
+            "extra": "mean: 4.119192389415642 usec\nrounds: 64936"
           }
         ]
       }
