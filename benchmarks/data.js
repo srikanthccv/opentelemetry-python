@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1660703494971,
+  "lastUpdate": 1660703525000,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -48984,6 +48984,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000002307544527928015",
             "extra": "mean: 60.42652639624356 usec\nrounds: 6554"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ad3e23955273ab653f6140bd40d9d05c8a37e481",
+          "message": "Update PeriodicExportingMetricReader to never call export() concurrently (#2873)",
+          "timestamp": "2022-08-15T23:49:33+05:30",
+          "tree_id": "0f7b88c5e9c4c0646d9523a651ac52248028e3e4",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/ad3e23955273ab653f6140bd40d9d05c8a37e481"
+        },
+        "date": 1660703518468,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 17405.38164657883,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00007324498623323282",
+            "extra": "mean: 57.45349457456787 usec\nrounds: 5253"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 12965.23724725716,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00002169058084316625",
+            "extra": "mean: 77.12932520471642 usec\nrounds: 6725"
           }
         ]
       }
