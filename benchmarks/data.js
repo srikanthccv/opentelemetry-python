@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1661676563250,
+  "lastUpdate": 1661676593495,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -47614,6 +47614,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000022291234841678832",
             "extra": "mean: 68.49113875119177 usec\nrounds: 5845"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bot@deepsource.io",
+            "name": "DeepSource Bot",
+            "username": "deepsourcebot"
+          },
+          "committer": {
+            "email": "bot@deepsource.io",
+            "name": "DeepSource Bot",
+            "username": "deepsourcebot"
+          },
+          "distinct": true,
+          "id": "2a7da32f77b30c0d3c93e9924df56b2d778c6b5e",
+          "message": "Add .deepsource.toml",
+          "timestamp": "2022-08-28T08:46:56Z",
+          "tree_id": "5b1a4bfa6c29a3a0bb4391b3e2b0309649163c9d",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/2a7da32f77b30c0d3c93e9924df56b2d778c6b5e"
+        },
+        "date": 1661676588353,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21326.314502820147,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005011230433506396",
+            "extra": "mean: 46.89042731071804 usec\nrounds: 4079"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14704.491815467838,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000023637205652384723",
+            "extra": "mean: 68.00643045331819 usec\nrounds: 5845"
           }
         ]
       }
