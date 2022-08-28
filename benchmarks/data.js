@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1661676954341,
+  "lastUpdate": 1661676960866,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -45786,6 +45786,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000022934795428561003",
             "extra": "mean: 850.0290165951718 nsec\nrounds: 128206"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "bot@deepsource.io",
+            "name": "DeepSource Bot",
+            "username": "deepsourcebot"
+          },
+          "committer": {
+            "email": "bot@deepsource.io",
+            "name": "DeepSource Bot",
+            "username": "deepsourcebot"
+          },
+          "distinct": true,
+          "id": "2a7da32f77b30c0d3c93e9924df56b2d778c6b5e",
+          "message": "Add .deepsource.toml",
+          "timestamp": "2022-08-28T08:46:56Z",
+          "tree_id": "5b1a4bfa6c29a3a0bb4391b3e2b0309649163c9d",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/2a7da32f77b30c0d3c93e9924df56b2d778c6b5e"
+        },
+        "date": 1661676955944,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 578277.1022594136,
+            "unit": "iter/sec",
+            "range": "stddev: 4.139591069631002e-7",
+            "extra": "mean: 1.729274764801979 usec\nrounds: 68028"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 1013795.0127108719,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000019203028947551055",
+            "extra": "mean: 986.3927001633782 nsec\nrounds: 111112"
           }
         ]
       }
