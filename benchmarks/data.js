@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1662019189180,
+  "lastUpdate": 1662019213385,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -51722,6 +51722,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000022130556960067306",
             "extra": "mean: 49.79843503846817 usec\nrounds: 6627"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "distinct": true,
+          "id": "6a0e186bd5e870c8c0ac8ca6dd74476afd97dee8",
+          "message": "Merge branch 'main' of github.com:srikanthccv/opentelemetry-python",
+          "timestamp": "2022-09-01T13:25:22+05:30",
+          "tree_id": "cce1962333d8b433c7200a8372a8d465ef99c4f7",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/6a0e186bd5e870c8c0ac8ca6dd74476afd97dee8"
+        },
+        "date": 1662019202510,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 19240.867500609827,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003966957724854297",
+            "extra": "mean: 51.97270860933405 usec\nrounds: 4077"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13435.249073500896,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000047593384839181284",
+            "extra": "mean: 74.4310726603764 usec\nrounds: 6785"
           }
         ]
       }
