@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1662019039845,
+  "lastUpdate": 1662019063130,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -58570,6 +58570,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000057829833181654594",
             "extra": "mean: 6.378260788293057 usec\nrounds: 29940"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "distinct": true,
+          "id": "6a0e186bd5e870c8c0ac8ca6dd74476afd97dee8",
+          "message": "Merge branch 'main' of github.com:srikanthccv/opentelemetry-python",
+          "timestamp": "2022-09-01T13:25:22+05:30",
+          "tree_id": "cce1962333d8b433c7200a8372a8d465ef99c4f7",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/6a0e186bd5e870c8c0ac8ca6dd74476afd97dee8"
+        },
+        "date": 1662019053918,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 99352.97395041326,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007100669859797747",
+            "extra": "mean: 10.065123974035208 usec\nrounds: 11575"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 196381.64285753592,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000021662638066423906",
+            "extra": "mean: 5.0921256460077835 usec\nrounds: 58824"
           }
         ]
       }
