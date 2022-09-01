@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1662019581969,
+  "lastUpdate": 1662019613674,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -55640,6 +55640,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00003661521049935558",
             "extra": "mean: 10.193569357438248 usec\nrounds: 181819"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "distinct": true,
+          "id": "6a0e186bd5e870c8c0ac8ca6dd74476afd97dee8",
+          "message": "Merge branch 'main' of github.com:srikanthccv/opentelemetry-python",
+          "timestamp": "2022-09-01T13:25:22+05:30",
+          "tree_id": "cce1962333d8b433c7200a8372a8d465ef99c4f7",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/6a0e186bd5e870c8c0ac8ca6dd74476afd97dee8"
+        },
+        "date": 1662019608381,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 287491.4979581637,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000011998522394783182",
+            "extra": "mean: 3.478363732848621 usec\nrounds: 178572"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 196682.13546206016,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008107038718328792",
+            "extra": "mean: 5.0843458540386814 usec\nrounds: 114943"
           }
         ]
       }
