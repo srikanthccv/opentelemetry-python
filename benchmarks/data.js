@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1662994299214,
+  "lastUpdate": 1662994349651,
   "repoUrl": "https://github.com/srikanthccv/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.7 - core": [
@@ -42514,6 +42514,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 4.332381861159353e-7",
             "extra": "mean: 4.248247904759189 usec\nrounds: 68966"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "overmeulen@murex.com",
+            "name": "Olivier VERMEULEN",
+            "username": "overmeulen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": false,
+          "id": "41b9e26d8324ae0496c85326b35e92bf617932d9",
+          "message": "Add a configurable max_export_batch_size to the gRPC metrics exporter (#2809)",
+          "timestamp": "2022-09-09T14:49:13+05:30",
+          "tree_id": "db74b344e5acebf8c123fdaff403b882189accb8",
+          "url": "https://github.com/srikanthccv/opentelemetry-python/commit/41b9e26d8324ae0496c85326b35e92bf617932d9"
+        },
+        "date": 1662994343863,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 130964.98101208733,
+            "unit": "iter/sec",
+            "range": "stddev: 4.874772707148419e-7",
+            "extra": "mean: 7.635628946547976 usec\nrounds: 19194"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 237173.64371361735,
+            "unit": "iter/sec",
+            "range": "stddev: 3.1976033739407647e-7",
+            "extra": "mean: 4.216320095024896 usec\nrounds: 69445"
           }
         ]
       }
